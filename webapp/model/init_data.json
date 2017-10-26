@@ -1,0 +1,79 @@
+{
+	 "byCountry":[{
+		 "Country":"Korea",
+		 "Sales":100000,
+		 "Profit":90000
+	 },{
+		 "Country":"Japan",
+		 "Sales":110000,
+		 "Profit":850000
+	 },{
+		 "Country":"China",
+		 "Sales":120000,
+		 "Profit":90000
+	 },{
+		 "Country":"France",
+		 "Sales":85000,
+		 "Profit":70000
+	 },{
+		 "Country":"USA",
+		 "Sales":150000,
+		 "Profit":110000
+	 },{
+		 "Country":"Italy",
+		 "Sales":145000,
+		 "Profit":120000
+	 }],
+	 "byCountry_Product":[{
+		  "Country":"Korea",
+			"Product":"Television",
+			"Sales":20000,
+			"Profit":30000
+		 },{
+			  "Country":"Korea",
+				"Product":"Radio",
+				"Sales":40000,
+				"Profit":20000
+			 },{
+				  "Country":"Korea",
+					"Product":"Refrigerator",
+					"Sales":50000,
+					"Profit":40000
+				 }
+	 ],
+	"bars": [{
+		"Category": "Product1",
+		"Value": 20,
+		"Selected":false
+	}, {
+		"Category": "Product2",
+		"Value": 40,
+		"Selected":false
+	}, {
+		"Category": "Product3",
+		"Value": 50,
+		"Selected":false
+	}, {
+		"Category": "Product4",
+		"Value": 30,
+		"Selected":false
+	}, {
+		"Category": "Product5",
+		"Value": 35,
+		"Selected":false
+	}],
+	"product_detail": [{
+		"Category": "TV",
+		"Value": 15.0
+	}, {
+		"Category": "Radio",
+		"Value": 35.0
+	}, {
+		"Category": "Computer",
+		"Value": 22.0
+	}, {
+		"Category": "Phone",
+		"Value": 28.0
+	}],
+	"product_detail_show":false
+}

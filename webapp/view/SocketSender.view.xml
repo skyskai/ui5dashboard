@@ -1,0 +1,20 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ysc.websocket.controller.SocketSender"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+			<Page title="Socket Sender">
+				<content>
+					<VBox>
+						<Label text="Type"/>
+						<Select>
+							<items>
+								<core:Item key="navigate" text="화면이동" />
+								<core:Item key="selectValue" text="값 선택" />
+							</items>
+						</Select>
+						
+						<Label text="전달할 값"/>
+						<Input id="_idTarget"/>
+					</VBox>
+				</content>
+			</Page>
+		
+</mvc:View>
