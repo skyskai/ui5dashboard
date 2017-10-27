@@ -1,5 +1,20 @@
-<mvc:View controllerName="ysc.websocket.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="ysc.websocket.controller.App" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" xmlns="sap.m">
-	<App id="idAppControl">
-	</App>
+	
+	<SplitApp id="SplitAppDemo">
+		<masterPages>
+			<Page id="master" title="요청 목록" class="sapUiStdPage">
+				<content>
+						<List id="notificationList" class="sapContrast sapContrastPlus" items="{localModel>/Chat}" >
+							<NotificationListItem title="{localModel>Title}" description="{localModel>Text}" priority="{localModel>Priority}" showCloseButton="false"/>
+						</List>
+				</content>
+			</Page>
+		</masterPages>
+		<detailPages>
+			<App id="idAppControl">
+			</App>
+		</detailPages>	
+	</SplitApp>
+
 </mvc:View>

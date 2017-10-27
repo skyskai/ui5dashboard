@@ -1,18 +1,36 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"ysc/websocket/controller/BaseController",
+	"sap/ui/model/Filter"
+], function(Controller,Filter) {
 	"use strict";
 
-	return Controller.extend("ysc.websocket.controller.Step01", {
+	return Controller.extend("ysc.websocket.controller.Main", {
 
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf ysc.websocket.view.Step01
 		 */
-		//	onInit: function() {
-		//
-		//	},
+			onInit: function() {
+			   this._oChart = this.byId("idVizFrame");
+			   var oLocalData = {"Year":""};
+			   var oViewModel = new sap.ui.model.json.JSONModel();
+				oViewModel.setData(oLocalData);
+				this.getView().setModel(oViewModel, "localModel");
+			   this.getRouter().getRoute("salesByCountry").attachPatternMatched(this._onObjectMatched, this);
+			},
+			_onObjectMatched:function(oEvent){
+				    var locModel = this.getModel("localModel");
+					var sYear = oEvent.getParameter("arguments").Year;
+					var oModel = this.getModel();
+					var aFilter = [new Filter({
+						path: 'Year',
+						operator: 'EQ',
+						value1: sYear
+					})];
+					locModel.setProperty("/Year",sYear);
+				    this._oChart.getDataset().getBinding("data").filter(aFilter);
+			},
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
@@ -39,6 +57,12 @@ sap.ui.define([
 		//	onExit: function() {
 		//
 		//	}
+		
+		
+		toNumber:function(sValue){
+			var newValue = sValue.replace(',','');
+			return newValue*1;
+		}
 
 	});
 

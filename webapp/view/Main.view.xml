@@ -1,0 +1,72 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:microchart="sap.suite.ui.microchart"
+xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:viz.data="sap.viz.ui5.data" xmlns:layout="sap.ui.layout"
+	controllerName="ysc.websocket.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Dashboard">
+		<content>
+			 <layout:FixFlex id='chartFixFlex' minFlexSize="250">
+			 	<layout:flexContent>
+						<Panel headerText="Sales by Country in {localModel>/Year}">
+						<!--<FlexBox width="20rem" height="10rem" alignItems="Center" class="sapUiSmallMargin">-->
+						<!--	<items>-->
+						<!--		<microchart:InteractiveBarChart labelWidth="25%" displayedBars="5" selectionChanged="selectionChanged" press="press" bars="{salesNorthwind>/SalesByCountry}">-->
+						<!--			<microchart:bars>-->
+						<!--				<microchart:InteractiveBarChartBar label="{salesNorthwind>Country}" value="{path:'salesNorthwind>Amount',formatter:'.toNumber'}" />-->
+						<!--			</microchart:bars>-->
+						<!--		</microchart:InteractiveBarChart>-->
+						<!--	</items>-->
+						<!--</FlexBox>-->
+						
+						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}"
+			                height='300px' width="100%" vizType='column'>
+			                <viz:dataset>
+			                    <viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCountry}">
+			                        <viz.data:dimensions>
+			                            <viz.data:DimensionDefinition name="Country"
+			                                value="{salesNorthwind>Country}" />
+			                        </viz.data:dimensions>
+			                        <viz.data:measures>
+			                            <viz.data:MeasureDefinition name="Sales"
+			                                value="{salesNorthwind>Amount}" />
+			                        </viz.data:measures>
+			                    </viz.data:FlattenedDataset>
+			                </viz:dataset>
+			
+			                <viz:feeds>
+			                    <viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure"
+			                        values="Sales" />
+			                    <viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension"
+			                        values="Country" />
+			                </viz:feeds>
+			            </viz:VizFrame>
+			            </Panel>
+             </layout:flexContent>
+    </layout:FixFlex>
+			
+			<!--<FlexBox width="20rem" height="10rem" alignItems="left" justifyContent="SpaceBetween" visible="{/product_detail_show}">-->
+			<!--	<items>-->
+			<!--		<microchart:InteractiveDonutChart selectionChanged="onSelectionChanged" displayedSegments="5" segments="{/product_detail}">-->
+			<!--			<microchart:segments>-->
+			<!--				<microchart:InteractiveDonutChartSegment label="{Category}" value="{Value}" displayedValue="{Value}%"/>-->
+			<!--			</microchart:segments>-->
+			<!--		</microchart:InteractiveDonutChart>-->
+			<!--	</items>-->
+			<!--</FlexBox>-->
+			
+			<!--<FlexBox width="20rem" height="10rem" alignItems="Center" class="sapUiSmallMargin">-->
+			<!--	<items>-->
+			<!--		<microchart:InteractiveLineChart selectionChanged="selectionChanged" press="press">-->
+			<!--			<microchart:points>-->
+			<!--				<microchart:InteractiveLineChartPoint value="33.1" label="May" selected="true"/>-->
+			<!--				<microchart:InteractiveLineChartPoint value="2.2" label="June"/>-->
+			<!--				<microchart:InteractiveLineChartPoint value="51.4" label="July"/>-->
+			<!--				<microchart:InteractiveLineChartPoint value="19.9" label="Aug" selected="true"/>-->
+			<!--				<microchart:InteractiveLineChartPoint value="69.9" label="Sep"/>-->
+			<!--				<microchart:InteractiveLineChartPoint value="0.9" label="Oct"/>-->
+			<!--			</microchart:points>-->
+			<!--		</microchart:InteractiveLineChart>-->
+			<!--	</items>-->
+			<!--</FlexBox>-->
+		</content>
+	</Page>
+</mvc:View>

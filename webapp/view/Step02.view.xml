@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ysc.websocket.controller.Step02"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Step02">
+	<Page title="Dashboard">
 				<content>
 					<Button text="Step02"/>
 				</content>

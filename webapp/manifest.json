@@ -18,10 +18,23 @@
 			"init_data": {
 				"uri": "model/init_data.json",
 				"type": "JSON"
+			},
+			"salesNorthwind": {
+				"uri": "model/salesNorthwind.json",
+				"type": "JSON"
+			},
+			"northwind": {
+				"uri": "services.odata.org/Northwind/Northwind.svc",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
 			}
 		}
 	},
 	"sap.ui": {
+	   
 		"_version": "1.1.0",
 		"technology": "UI5",
 		"icons": {
@@ -67,6 +80,13 @@
 			"": {
 				"type": "sap.ui.model.json.JSONModel",
 				"dataSource": "init_data"
+			},
+			"salesNorthwind": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "salesNorthwind"
+			},
+			"northwind": {
+				"dataSource": "northwind"
 			}
 		},
 		"resources": {
@@ -84,10 +104,25 @@
 				"transition": "slide"
 			},
 			"routes": [{
-				"name": "Step01",
-				"pattern": "Step01",
+				"name": "salesByCountry",
+				"pattern": "SalesCountry/{Year}",
 				"greedy": false,
-				"target": "STEP01"
+				"target": "Main"
+			}, {
+				"name": "salesByCategory",
+				"pattern": "SalesCategory/{Year}",
+				"greedy": false,
+				"target": "Main"
+			}, {
+				"name": "salesByProduct",
+				"pattern": "SalesProduct/{Year}",
+				"greedy": false,
+				"target": "Main"
+			}, {
+				"name": "salesByCountry",
+				"pattern": "SalesCountry/{Year}",
+				"greedy": false,
+				"target": "Main"
 			}, {
 				"name": "Step02",
 				"pattern": "Step02",
@@ -100,9 +135,9 @@
 				"target": "SOCKETSENDER"
 			}],
 			"targets": {
-				"STEP01": {
-					"viewName": "Step01",
-					"viewId": "idStep01"
+				"Main": {
+					"viewName": "Main",
+					"viewId": "idMain"
 				},
 				"STEP02": {
 					"viewName": "Step02",
