@@ -1,0 +1,55 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
+	xmlns:layout="sap.ui.layout" controllerName="ysc.websocket.controller.SalesByProduct"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+<Page title="Dashboard">
+		<content>
+				<layout:FixFlex id="chartFixFlex" minFlexSize="250" fixFirst="false">
+					<layout:flexContent>
+						<Panel headerText="Sales by Product in {localModel>/Year}">
+							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='300px' width="100%" vizType='donut' 
+							vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:false}}}">
+								<viz:dataset>
+									<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByProduct}">
+										<viz.data:dimensions>
+											<viz.data:DimensionDefinition name="Product" value="{salesNorthwind>Product}"/>
+										</viz.data:dimensions>
+										<viz.data:measures>
+											<viz.data:MeasureDefinition name="Amount" value="{salesNorthwind>Amount}"/>
+										</viz.data:measures>
+									</viz.data:FlattenedDataset>
+								</viz:dataset>
+								<viz:feeds>
+									<viz.feeds:FeedItem  uid="size" type="Measure" values="Amount"/>
+									<viz.feeds:FeedItem  uid="color" type="Dimension" values="Product"/>
+								</viz:feeds>
+							</viz:VizFrame>
+						</Panel>
+					</layout:flexContent>
+			    <layout:fixContent>
+				<Table id="idTable" inset="false" items="{path: 'salesNorthwind>/SalesByProduct',sorter: {path: 'salesNorthwind>Amount',descending:true}}">
+					<columns>
+						<Column >
+							<Text text="Product"/>
+						</Column>
+						<Column >
+							<Text text="Amount"/>
+						</Column>
+						<Column >
+							<Text text="Currency"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier title="{salesNorthwind>Product}"/>
+								<ObjectNumber emphasized="false" number="{parts:['salesNorthwind>Amount','salesNorthwind>Currency'],type:'sap.ui.model.type.Currency',formatOptions:{showMeasure:false}}" unit="{Currency}"/>
+								<Text text="{salesNorthwind>Currency}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				</layout:fixContent>
+					</layout:FixFlex>
+			</content>
+		</Page>
+</mvc:View>

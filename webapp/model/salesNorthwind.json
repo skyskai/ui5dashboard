@@ -383,145 +383,145 @@
 [
  {
    "Year": 1996,
-   "Category Desc.": "Beverages",
+   "Category": "Beverages",
    "Amount": 32216.4,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Dairy Products",
+   "Category": "Dairy Products",
    "Amount": 21100.6,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Meat/Poultry",
+   "Category": "Meat/Poultry",
    "Amount": 18479.8,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Confections",
+   "Category": "Confections",
    "Amount": 17742.3,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Seafood",
+   "Category": "Seafood",
    "Amount": 14189.1,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Produce",
+   "Category": "Produce",
    "Amount": 9438,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Condiments",
+   "Category": "Condiments",
    "Amount": 9010.3,
    "Currency": "USD"
  },
  {
    "Year": 1996,
-   "Category Desc.": "Grains/Cereals",
+   "Category": "Grains/Cereals",
    "Amount": 7970.2,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Dairy Products",
+   "Category": "Dairy Products",
    "Amount": 134900,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Confections",
+   "Category": "Confections",
    "Amount": 121772.68,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Meat/Poultry",
+   "Category": "Meat/Poultry",
    "Amount": 98700.38,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Beverages",
+   "Category": "Beverages",
    "Amount": 89727.6,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Grains/Cereals",
+   "Category": "Grains/Cereals",
    "Amount": 84588.7,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Condiments",
+   "Category": "Condiments",
    "Amount": 76001.8,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Produce",
+   "Category": "Produce",
    "Amount": 67393.4,
    "Currency": "USD"
  },
  {
    "Year": 1997,
-   "Category Desc.": "Seafood",
+   "Category": "Seafood",
    "Amount": 67010.4,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Beverages",
+   "Category": "Beverages",
    "Amount": 178458.5,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Confections",
+   "Category": "Confections",
    "Amount": 79114.74,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Dairy Products",
+   "Category": "Dairy Products",
    "Amount": 77293,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Seafood",
+   "Category": "Seafood",
    "Amount": 64699.52,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Produce",
+   "Category": "Produce",
    "Amount": 45918.1,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Grains/Cereals",
+   "Category": "Grains/Cereals",
    "Amount": 43458,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Meat/Poultry",
+   "Category": "Meat/Poultry",
    "Amount": 41639.42,
    "Currency": "USD"
  },
  {
    "Year": 1998,
-   "Category Desc.": "Condiments",
+   "Category": "Condiments",
    "Amount": 32167.3,
    "Currency": "USD"
  }

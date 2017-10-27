@@ -110,14 +110,14 @@
 				"target": "Main"
 			}, {
 				"name": "salesByCategory",
-				"pattern": "SalesCategory/{Year}",
+				"pattern": "SalesCategory/{Year}/:Category:",
 				"greedy": false,
-				"target": "Main"
+				"target": "SalesByCategory"
 			}, {
 				"name": "salesByProduct",
 				"pattern": "SalesProduct/{Year}",
 				"greedy": false,
-				"target": "Main"
+				"target": "SalesByProduct"
 			}, {
 				"name": "salesByCountry",
 				"pattern": "SalesCountry/{Year}",
@@ -139,9 +139,13 @@
 					"viewName": "Main",
 					"viewId": "idMain"
 				},
-				"STEP02": {
-					"viewName": "Step02",
-					"viewId": "idStep02"
+				"SalesByCategory": {
+					"viewName": "SalesByCategory",
+					"viewId": "idSalesByCategory"
+				},
+				"SalesByProduct": {
+					"viewName": "SalesByProduct",
+					"viewId": "idSalesByProduct"
 				},
 				"SOCKETSENDER": {
 					"viewName": "SocketSender",
