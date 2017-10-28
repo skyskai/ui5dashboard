@@ -54,7 +54,7 @@ sap.ui.define([
 		        		case "input.DetailCategory":
 		        			//if Category ID is supplied show picture dialog for 5 secs
 							    if(oResult.Parameters.CategoryName) {
-							    	var sUrlPicture = "http://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
+							    	var sUrlPicture = "https://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
 			                          $.get(sUrlPicture, function( data ) {
 			                              var sTrimmedData = data.value[0].Picture.substr(104);
 			                              //that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
