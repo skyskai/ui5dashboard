@@ -3,10 +3,10 @@
 	xmlns:layout="sap.ui.layout" controllerName="ysc.websocket.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Dashboard">
 		<content>
-				<layout:FixFlex id="chartFixFlex" minFlexSize="250" fixFirst="false">
+				<layout:FixFlex id="chartFixFlex" minFlexSize="400"  fixFirst="false">
 					<layout:flexContent>
 						<Panel headerText="Sales by Country in {localModel>/Year}">
-							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='300px' width="100%" vizType='column' vizProperties="{title:{visible:false}}">
+							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='column' vizProperties="{title:{visible:false}}">
 								<viz:dataset>
 									<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCountry}">
 										<viz.data:dimensions>
@@ -25,12 +25,12 @@
 						</Panel>
 					</layout:flexContent>
 			    <layout:fixContent>
-				<Table id="idTable" inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'salesNorthwind>Amount',descending:true}}">
+				<Table id="idTable"  inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'salesNorthwind>Amount',descending:true}}">
 					<columns>
 						<Column >
 							<Text text="Country"/>
 						</Column>
-						<Column >
+						<Column hAlign="Right">
 							<Text text="Amount"/>
 						</Column>
 						<Column >

@@ -33,26 +33,7 @@ sap.ui.define([
 					locModel.setProperty("/Year",sYear);
 				    this._oChart.getDataset().getBinding("data").filter(aFilter);
 				    this._oTable.getBinding("items").filter(aFilter);
-				    //if Category ID is supplied show picture dialog for 5 secs
-				    var sCategoryName = oEvent.getParameter("arguments").Category;
-				    if(oEvent.getParameter("arguments").Category) {
-				    	var sUrl = "http://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oEvent.getParameter("arguments").Category +"'&$format=json";
-                          $.get(sUrl, function( data ) {
-                              var sTrimmedData = data.value[0].Picture.substr(104);
-                              //that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
-                              var oDialog = new sap.m.Dialog({
-                              	title : sCategoryName,
-                              	// contentWidth:'100%',
-                              	// contentHeight:'100%',
-                              	content : new sap.m.Image({src:"data:image/jpg;base64," + sTrimmedData})
-                              });
-                              oDialog.open();
-                              setTimeout(function(){oDialog.close()}, 5000);
-                              //locModel.setProperty("/CategoryPicture",sTrimmedData);
-                          });
-                          
-				    	
-				    }
+				    
 			}
 
 		/**

@@ -1,7 +1,7 @@
 <mvc:View controllerName="ysc.websocket.controller.App" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" xmlns="sap.m">
 	
-	<SplitContainer id="SplitAppDemo">
+	<SplitContainer id="SplitAppDemo" mode="StretchCompressMode">
 		<masterPages>
 			<Page id="master" title="{i18n>mainPageTitle}" class="sapUiStdPage">
 				<content>

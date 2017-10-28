@@ -3,10 +3,10 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Dashboard">
 		<content>
-				<layout:FixFlex id="chartFixFlex" minFlexSize="250" fixFirst="false">
+				<layout:FixFlex id="chartFixFlex" minFlexSize="400"  fixFirst="false">
 					<layout:flexContent>
 						<Panel headerText="Sales by Category in {localModel>/Year}">
-							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='300px' width="100%" vizType='donut' 
+							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='donut' 
 							vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:false}}}">
 								<viz:dataset>
 									<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCategory}">
@@ -31,7 +31,7 @@
 						<Column >
 							<Text text="Category"/>
 						</Column>
-						<Column >
+						<Column hAlign="Right" >
 							<Text text="Amount"/>
 						</Column>
 						<Column >

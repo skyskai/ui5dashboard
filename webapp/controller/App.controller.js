@@ -30,11 +30,12 @@ sap.ui.define([
 		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
 		        //add Request Text to Upper notification item
 		        that._addTextToChat(oReturnData.forUIRequest);
-		        var oInitModel = that.getModel();
-		        MessageToast.show("Received:"+oReturnData.target);
+		        
+		       
 		        //navTo
 		        var oRouter = that.getRouter();
 		        var oResult = JSON.parse(oReturnData.forUIresults);
+		         MessageToast.show("Received:"+oResult.Action);
 		        switch (oResult.Action) {
 		        	case "input.SalesCategory_Year":
 		        		switch (oResult.Parameters.SalesCategory) {
@@ -49,8 +50,24 @@ sap.ui.define([
 		        				break;
 		        			default:
 		        		}
-		        		
 		        		break;
+		        		case "input.DetailCategory":
+		        			//if Category ID is supplied show picture dialog for 5 secs
+							    if(oResult.Parameters.CategoryName) {
+							    	var sUrlPicture = "http://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
+			                          $.get(sUrlPicture, function( data ) {
+			                              var sTrimmedData = data.value[0].Picture.substr(104);
+			                              //that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
+			                              var oDialog = new sap.m.Dialog({
+			                              	title : oResult.Parameters.CategoryName,
+			                              	content : new sap.m.Image({src:"data:image/jpg;base64," + sTrimmedData})
+			                              });
+			                              oDialog.open();
+			                              setTimeout(function(){oDialog.close()}, 5000);
+			                              //locModel.setProperty("/CategoryPicture",sTrimmedData);
+			                          });
+							    }
+							    break;
 		        	default:
 		        }
 		        // switch (oReturnData.action) {
