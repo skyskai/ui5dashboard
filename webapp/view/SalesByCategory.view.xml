@@ -7,7 +7,7 @@
 				<layout:fixContent>
 					<Panel headerText="Sales by Category in {localModel>/Year}">
 						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='donut'
-							vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:false}}}">
+							vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:true}}}">
 							<viz:dataset>
 								<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCategory}">
 									<viz.data:dimensions>
@@ -51,8 +51,10 @@
 					</Table>
 				</layout:flexContent>
 			</layout:FixFlex>
-			<!--Category image popup-->
 			<Image id="idImage" height="100px" width="200px" src="data:image/png;base64,{localModel>CategoryPicture}"/>
+			<Dialog id="idCategoryPictureDialog">
+				<Image id="idCategoryImage" src="{localModel>/Src}"/>
+			</Dialog>
 		</content>
 	</Page>
 </mvc:View>

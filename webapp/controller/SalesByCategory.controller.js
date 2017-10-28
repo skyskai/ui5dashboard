@@ -29,10 +29,31 @@ sap.ui.define([
 						operator: 'EQ',
 						value1: sYear
 					})];
-					var that = this;
+				
 					locModel.setProperty("/Year",sYear);
-				    this._oChart.getDataset().getBinding("data").filter(aFilter);
+				    
 				    this._oTable.getBinding("items").filter(aFilter);
+				    this._oChart.getDataset().getBinding("data").filter(aFilter);
+				    var that = this;
+				    //picture
+				    // var sCategoryName = oEvent.getParameter("arguments").CategoryName;
+				    //  if(sCategoryName) {
+							 //   	var sUrlPicture = "https://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ sCategoryName +"'&$format=json";
+			     //                     $.get(sUrlPicture, function( data ) {
+			     //                         var sTrimmedData = data.value[0].Picture.substr(104);
+			     //                         //that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
+			     //                         if (!this.pressDialog) {
+			     //                         this.pressDialog = new sap.m.Dialog({
+			     //                         	title : sCategoryName,
+			     //                         	content : new sap.m.Image({src:"data:image/jpg;base64," + sTrimmedData})
+			     //                         });
+			     //                         that.getView().addDependent(this.pressDialog);
+			     //                         }
+			     //                         this.pressDialog.open();
+			     //                         setTimeout(function(){this.pressDialog.close()}, 5000);
+			     //                         //locModel.setProperty("/CategoryPicture",sTrimmedData);
+			     //                     });
+							 //   }
 				    
 			}
 

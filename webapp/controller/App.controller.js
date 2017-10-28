@@ -57,16 +57,21 @@ sap.ui.define([
 							    	var sUrlPicture = "https://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
 			                          $.get(sUrlPicture, function( data ) {
 			                              var sTrimmedData = data.value[0].Picture.substr(104);
-			                              //that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
+			                              that._oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
 			                              var oDialog = new sap.m.Dialog({
 			                              	title : oResult.Parameters.CategoryName,
 			                              	content : new sap.m.Image({src:"data:image/jpg;base64," + sTrimmedData})
 			                              });
+			                              //var oDialog = sap.ui.getCore().byId("idCategoryPictureDialog");
+			                              //var oImage = sap.ui.getCore().byId("idCategoryImage");
+			                              //that.getView().addDependent(oDialog);
+			                              //oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
 			                              oDialog.open();
 			                              setTimeout(function(){oDialog.close()}, 5000);
 			                              //locModel.setProperty("/CategoryPicture",sTrimmedData);
 			                          });
 							    }
+							    // oRouter.navTo("salesByCategory",{Year:1998,CategoryName:"Beverages"});
 							    break;
 		        	default:
 		        }

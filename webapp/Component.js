@@ -26,6 +26,10 @@ sap.ui.define([
 			// call the base component's init function and create the App view
 				UIComponent.prototype.init.apply(this, arguments);
 			this.getRouter().initialize();
+			this.getRouter().attachTitleChanged(function(oEvent){
+				// set the browser page title based on selected order/product
+				document.title = oEvent.getParameter("title");
+			});
 		},
 		destroy : function () {
 				UIComponent.prototype.destroy.apply(this, arguments);
