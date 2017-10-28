@@ -1,54 +1,56 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	xmlns:viz="sap.viz.ui5.controls" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data"
-	xmlns:layout="sap.ui.layout" controllerName="ysc.websocket.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:layout="sap.ui.layout"
+	controllerName="ysc.websocket.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Dashboard">
 		<content>
-				<layout:FixFlex id="chartFixFlex" minFlexSize="400"  fixFirst="false">
-					<layout:flexContent>
-						<Panel headerText="Sales by Country in {localModel>/Year}">
-							<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='column' vizProperties="{title:{visible:false}}">
-								<viz:dataset>
-									<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCountry}">
-										<viz.data:dimensions>
-											<viz.data:DimensionDefinition name="Country" value="{salesNorthwind>Country}"/>
-										</viz.data:dimensions>
-										<viz.data:measures>
-											<viz.data:MeasureDefinition name="Amount" value="{salesNorthwind>Amount}"/>
-										</viz.data:measures>
-									</viz.data:FlattenedDataset>
-								</viz:dataset>
-								<viz:feeds>
-									<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Amount"/>
-									<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="Country"/>
-								</viz:feeds>
-							</viz:VizFrame>
-						</Panel>
-					</layout:flexContent>
-			    <layout:fixContent>
-				<Table id="idTable"  inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'salesNorthwind>Amount',descending:true}}">
-					<columns>
-						<Column >
-							<Text text="Country"/>
-						</Column>
-						<Column hAlign="Right">
-							<Text text="Amount"/>
-						</Column>
-						<Column >
-							<Text text="Currency"/>
-						</Column>
-					</columns>
-					<items>
-						<ColumnListItem>
-							<cells>
-								<ObjectIdentifier title="{salesNorthwind>Country}"/>
-								<ObjectNumber emphasized="false" number="{parts:['salesNorthwind>Amount','salesNorthwind>Currency'],type:'sap.ui.model.type.Currency',formatOptions:{showMeasure:false}}" unit="{Currency}"/>
-								<Text text="{salesNorthwind>Currency}"/>
-							</cells>
-						</ColumnListItem>
-					</items>
-				</Table>
+			<layout:FixFlex id="chartFixFlex" minFlexSize="400" fixFirst="true">
+				<layout:fixContent>
+					<Panel headerText="Sales by Country in {localModel>/Year}">
+						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='column' vizProperties="{title:{visible:false}}">
+							<viz:dataset>
+								<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCountry}">
+									<viz.data:dimensions>
+										<viz.data:DimensionDefinition name="Country" value="{salesNorthwind>Country}"/>
+									</viz.data:dimensions>
+									<viz.data:measures>
+										<viz.data:MeasureDefinition name="Amount" value="{salesNorthwind>Amount}"/>
+									</viz.data:measures>
+								</viz.data:FlattenedDataset>
+							</viz:dataset>
+							<viz:feeds>
+								<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Amount"/>
+								<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="Country"/>
+							</viz:feeds>
+						</viz:VizFrame>
+					</Panel>
 				</layout:fixContent>
-					</layout:FixFlex>
-			</content>
-		</Page>
-	</mvc:View>
+				<layout:flexContent>
+					<Table id="idTable" inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'Amount',descending:true}}">
+						<columns>
+							<Column >
+								<Text text="Country"/>
+							</Column>
+							<Column hAlign="Right">
+								<Text text="Amount"/>
+							</Column>
+							<Column >
+								<Text text="Currency"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<ObjectIdentifier title="{salesNorthwind>Country}"/>
+									<ObjectNumber emphasized="false"
+										number="{parts:['salesNorthwind>Amount','salesNorthwind>Currency'],type:'sap.ui.model.type.Currency',formatOptions:{showMeasure:false}}"
+										unit="{Currency}"/>
+									<Text text="{salesNorthwind>Currency}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</layout:flexContent>
+			</layout:FixFlex>
+		</content>
+	</Page>
+</mvc:View>

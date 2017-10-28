@@ -18,11 +18,13 @@ sap.ui.define([
 		 */
 		init: function() {
 			// call the base component's init function
-			UIComponent.prototype.init.apply(this, arguments);
+			// UIComponent.prototype.init.apply(this, arguments);
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
 			// create the views based on the url/hash
+			// call the base component's init function and create the App view
+				UIComponent.prototype.init.apply(this, arguments);
 			this.getRouter().initialize();
 		},
 		destroy : function () {
