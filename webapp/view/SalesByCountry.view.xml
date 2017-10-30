@@ -25,7 +25,7 @@
 					</Panel>
 				</layout:fixContent>
 				<layout:flexContent>
-					<Table id="idTable" inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'Amount',descending:true}}">
+					<Table id="idTable" growingThreshold="10" growing="true" inset="false" items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'Amount',descending:true}}">
 						<columns>
 							<Column >
 								<Text text="Country"/>

@@ -26,7 +26,7 @@
 					</Panel>
 				</layout:fixContent>
 				<layout:flexContent>
-					<Table id="idTable" growingThreshold="10" items="{path: 'salesNorthwind>/SalesByCategory',sorter: {path: 'Amount',descending:true}}">
+					<Table id="idTable" growingThreshold="10" growing="true" items="{path: 'salesNorthwind>/SalesByCategory',sorter: {path: 'Amount',descending:true}}">
 						<columns>
 							<Column >
 								<Text text="Category"/>

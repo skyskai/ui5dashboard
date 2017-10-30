@@ -53,10 +53,12 @@ sap.ui.define([
 		        		break;
 		        		case "input.DetailCategory":
 		        			//if Category ID is supplied show picture dialog for 5 secs
+		        			var sURL = "https://cors-anywhere.herokuapp.com/http://services.odata.org/V2/Northwind/Northwind.svc/"
 							    if(oResult.Parameters.CategoryName) {
-							    	var sUrlPicture = "https://services.odata.org/Northwind/Northwind.svc/Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
+							    	var sUrlPicture = sURL + "Categories?$filter=CategoryName eq '"+ oResult.Parameters.CategoryName +"'&$format=json";
 			                          $.get(sUrlPicture, function( data ) {
-			                              var sTrimmedData = data.value[0].Picture.substr(104);
+			                              //var sTrimmedData = data.value[0].Picture.substr(104);
+			                              var sTrimmedData = data.d.results[0].Picture.substr(104);
 			                              if(!that.oDialog){
 				                              that.oDialog = new sap.m.Dialog({
 				                              	title : oResult.Parameters.CategoryName,
@@ -68,6 +70,7 @@ sap.ui.define([
 			                              } else {
 			                              	that.oDialog.destroyContent();
 			                              	that.oDialog.addContent(new sap.m.Image({src:"data:image/png;base64," + sTrimmedData}));
+			                              	that.oDialog.setTitle(oResult.Parameters.CategoryName);
 			                              }
 			                              //oImage.setSrc("data:image/jpg;base64," + sTrimmedData);
 			                              that.oDialog.open();
