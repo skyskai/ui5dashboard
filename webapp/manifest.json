@@ -118,6 +118,14 @@
 				"name": "salesByProduct",
 				"pattern": "SalesProduct/{Year}",
 				"target": ["Master", "SalesByProduct"]
+			}, {
+				"name": "salesCompare",
+				"pattern": "SalesCompare/{YearFrom}/{YearTo}/{CountryName}",
+				"target": ["Master", "SalesCompare"]
+			}, {
+				"name": "dialogFlow",
+				"pattern": "DialogFlow",
+				"target": ["DialogFlow"]
 			}],
 			"targets": {
 				"Master": {
@@ -157,10 +165,20 @@
 						"formatter": "jQuery.sap.formatMessage"
 					},
 					"viewLevel": 1
+				},"SalesCompare": {
+					"viewName": "SalesCompare",
+					"viewId": "idSalesCompare",
+					"controlAggregation": "detailPages",
+					"title": {
+						"parts": ["detailPageTitle"],
+						"formatter": "jQuery.sap.formatMessage"
+					},
+					"viewLevel": 1
 				},
-				"SOCKETSENDER": {
+				"DialogFlow": {
 					"viewName": "SocketSender",
-					"viewId": "idSocketSender"
+					"viewId": "idSocketSender",
+					"controlAggregation": "detailPages"
 				}
 			}
 		}

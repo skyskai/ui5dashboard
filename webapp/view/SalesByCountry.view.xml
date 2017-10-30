@@ -6,7 +6,8 @@
 			<layout:FixFlex id="chartFixFlex" minFlexSize="400" fixFirst="true">
 				<layout:fixContent>
 					<Panel headerText="Sales by Country in {localModel>/Year}">
-						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" vizType='column' vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:true}}}">
+						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" height="400px" vizType='column'
+						vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:true},window:{start: 'firstDataPoint', end: 'lastDataPoint'}}}">
 							<viz:dataset>
 								<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByCountry}">
 									<viz.data:dimensions>
@@ -33,9 +34,9 @@
 							<Column hAlign="Right">
 								<Text text="Amount"/>
 							</Column>
-							<Column >
-								<Text text="Currency"/>
-							</Column>
+							<!--<Column >-->
+							<!--	<Text text="Currency"/>-->
+							<!--</Column>-->
 						</columns>
 						<items>
 							<ColumnListItem>
@@ -43,8 +44,8 @@
 									<ObjectIdentifier title="{salesNorthwind>Country}"/>
 									<ObjectNumber emphasized="false"
 										number="{parts:['salesNorthwind>Amount','salesNorthwind>Currency'],type:'sap.ui.model.type.Currency',formatOptions:{showMeasure:false}}"
-										unit="{Currency}"/>
-									<Text text="{salesNorthwind>Currency}"/>
+										unit="{salesNorthwind>Currency}"/>
+									<!--<Text text="{salesNorthwind>Currency}"/>-->
 								</cells>
 							</ColumnListItem>
 						</items>

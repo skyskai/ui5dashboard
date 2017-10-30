@@ -62,6 +62,7 @@ sap.ui.define([
 			                              if(!that.oDialog){
 				                              that.oDialog = new sap.m.Dialog({
 				                              	title : oResult.Parameters.CategoryName,
+				                              	stretchOnPhone:true,
 				                              	content : new sap.m.Image({src:"data:image/png;base64," + sTrimmedData})
 				                              });
 				                              //var oDialog = sap.ui.getCore().byId("idCategoryPictureDialog");
@@ -80,6 +81,10 @@ sap.ui.define([
 							    }
 							    // oRouter.navTo("salesByCategory",{Year:1998,CategoryName:"Beverages"});
 							    break;
+					    //두개 년도를 비교
+						case "input.CountryCompare":
+					     	oRouter.navTo("salesCompare",oResult.Parameters);
+					     	break;
 		        	default:
 		        }
 		        // switch (oReturnData.action) {

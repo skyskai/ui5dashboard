@@ -2,18 +2,20 @@
 	xmlns:html="http://www.w3.org/1999/xhtml">
 			<Page title="Socket Sender">
 				<content>
-					<VBox>
-						<Label text="Type"/>
-						<Select>
-							<items>
-								<core:Item key="navigate" text="화면이동" />
-								<core:Item key="selectValue" text="값 선택" />
-							</items>
-						</Select>
+					<html:iframe width="350" height="100%" src="https://console.dialogflow.com/api-client/demo/embedded/ecd4a909-9abb-4c01-ad27-9a77233fd0b7">
+					</html:iframe>
+					<!--<VBox>-->
+					<!--	<Label text="Type"/>-->
+					<!--	<Select>-->
+					<!--		<items>-->
+					<!--			<core:Item key="navigate" text="화면이동" />-->
+					<!--			<core:Item key="selectValue" text="값 선택" />-->
+					<!--		</items>-->
+					<!--	</Select>-->
 						
-						<Label text="전달할 값"/>
-						<Input id="_idTarget"/>
-					</VBox>
+					<!--	<Label text="전달할 값"/>-->
+					<!--	<Input id="_idTarget"/>-->
+					<!--</VBox>-->
 				</content>
 			</Page>
 		
