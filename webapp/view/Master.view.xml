@@ -1,10 +1,20 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ysc.websocket.controller.Master"
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:suite="sap.suite.ui.commons" controllerName="ysc.websocket.controller.Master"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="{i18n>mainPageTitle}">
+	<Page title="{i18n>mainPageTitle}" showHeader="false">
 		<content>
-			<List id="notificationList" class="sapContrast sapContrastPlus" items="{localModel>/Chat}">
-				<NotificationListItem title="{localModel>Title}" description="{localModel>Text}" priority="{localModel>Priority}" showCloseButton="false"/>
-			</List>
+			<!--<Panel headerText="{i18n>mainPageTitle}" >-->
+			<!--<List id="notificationList" class="sapContrast sapContrastPlus" items="{localModel>/Chat}">-->
+			<!--	<NotificationListItem title="{localModel>Title}" description="{localModel>Text}" priority="{localModel>Priority}" showCloseButton="false"/>-->
+			<!--</List>-->
+			<suite:Timeline showItemFilter="false" showSearch="false" showSort="false" showSuggestion="false" content="{localModel>/Chat}" >
+				<suite:content>
+					<suite:TimelineItem title="{localModel>Title}" text="{localModel>Text}" userName="{localModel>Username}" dateTime="{localModel>Datetime}" icon="{localModel>Icon}"/>
+						
+					
+				</suite:content>
+				
+			</suite:Timeline>
+			<!--</Panel>-->
 		</content>
 	</Page>
 </mvc:View>

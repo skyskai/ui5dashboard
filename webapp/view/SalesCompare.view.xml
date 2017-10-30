@@ -2,11 +2,11 @@
 	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:layout="sap.ui.layout"
 	controllerName="ysc.websocket.controller.SalesCompare"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Dashboard">
+	<Page title="Dashboard" showHeader="false">
 		<content>
 			<layout:FixFlex id="chartFixFlex" minFlexSize="400" fixFirst="true">
 				<layout:fixContent>
-					<Panel headerText="Sales comparison of {localModel>/Country}">
+					<Panel headerText="Sales comparison of {localModel>/Country}" class="sapUiResponsiveMargin" width="auto">
 						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" width="100%" height="400px" vizType='column'
 							vizProperties="{title:{visible:false},plotArea:{dataLabel:{visible:true},window:{start: 'firstDataPoint', end: 'lastDataPoint'}}}">
 							<viz:dataset>
@@ -27,6 +27,7 @@
 					</Panel>
 				</layout:fixContent>
 				<layout:flexContent>
+					<Panel headerText="Detail List" class="sapUiResponsiveMargin" width="auto">
 					<Table id="idTable" growingThreshold="10" growing="true" inset="false"
 						items="{path: 'salesNorthwind>/SalesByCountry',sorter: {path: 'Year',descending:false}}">
 						<columns>
@@ -52,6 +53,7 @@
 							</ColumnListItem>
 						</items>
 					</Table>
+					</Panel>
 				</layout:flexContent>
 			</layout:FixFlex>
 		</content>

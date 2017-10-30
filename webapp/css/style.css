@@ -1,1 +1,20 @@
 /* Enter your custom styles here */
+/*Panel border and shadow */
+.sapMPanel.sapUiResponsiveMargin{
+	border: solid 1px #D4E6F1;
+    box-shadow: 5px 5px 5px #D0D3D4;
+}
+
+.sapMPanelHdr{
+	background-color : #2471A3;
+	color : white;
+}
+
+.sapMPanel.sapUiResponsiveMargin.noShadow{
+	border-bottom: 0px !important;
+	box-shadow: none;
+}
+.sapMPanelBGTranslucent.sapMPanelContent{
+	border-bottom: 0px !important;
+	
+}

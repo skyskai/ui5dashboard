@@ -8,7 +8,7 @@ sap.ui.define([
 		
 		onInit:function(){
 			//local model
-			var oLocalData = {"Chat":[{"Title":"<Notification>","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Priority":"Low"}]};
+			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]};
 			var oViewModel = new sap.ui.model.json.JSONModel();
 			oViewModel.setData(oLocalData);
 			this.getView().setModel(oViewModel, "localModel");
@@ -35,7 +35,7 @@ sap.ui.define([
 		        //navTo
 		        var oRouter = that.getRouter();
 		        var oResult = JSON.parse(oReturnData.forUIresults);
-		         MessageToast.show("Received:"+oResult.Action);
+		         //MessageToast.show("Received:"+oResult.Action);
 		        switch (oResult.Action) {
 		        	case "input.SalesCategory_Year":
 		        		switch (oResult.Parameters.SalesCategory) {
@@ -121,7 +121,7 @@ sap.ui.define([
 		_addTextToChat:function(newText){
 			var locModel = this.getModel("localModel");
 			var aData = locModel.getData();
-			aData.Chat.push({Title:"YOU",Text:newText});
+			aData.Chat.push({Text:newText,Username:"You",Datetime:new Date(),Icon:"sap-icon://customer"});
 			locModel.refresh();
 		}
 
