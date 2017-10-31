@@ -105,7 +105,7 @@
 			"routes": [{
 				"name": "master",
 				"pattern": "",
-				"target": ["Master"]
+				"target": ["Master","InitDetail"]
 			}, {
 				"name": "salesByCountry",
 				"pattern": "SalesCountry/{Year}",
@@ -131,48 +131,33 @@
 				"Master": {
 					"viewName": "Master",
 					"controlAggregation": "masterPages",
-					"title": {
-						"parts": ["mainPageTitle"],
-						"formatter": "jQuery.sap.formatMessage"
-					},
-					"viewLevel": 0
+					"viewLevel": 1
 				},
 				"SalesByCountry": {
 					"viewName": "SalesByCountry",
 					"controlAggregation": "detailPages",
-					"title": {
-						"parts": ["detailPageTitle"],
-						"formatter": "jQuery.sap.formatMessage"
-					},
 					"viewLevel": 1
 				},
 				"SalesByCategory": {
 					"viewName": "SalesByCategory",
 					"viewId": "idSalesByCategory",
 					"controlAggregation": "detailPages",
-					"title": {
-						"parts": ["detailPageTitle"],
-						"formatter": "jQuery.sap.formatMessage"
-					},
 					"viewLevel": 1
 				},
 				"SalesByProduct": {
 					"viewName": "SalesByProduct",
 					"viewId": "idSalesByProduct",
 					"controlAggregation": "detailPages",
-					"title": {
-						"parts": ["detailPageTitle"],
-						"formatter": "jQuery.sap.formatMessage"
-					},
 					"viewLevel": 1
 				},"SalesCompare": {
 					"viewName": "SalesCompare",
 					"viewId": "idSalesCompare",
 					"controlAggregation": "detailPages",
-					"title": {
-						"parts": ["detailPageTitle"],
-						"formatter": "jQuery.sap.formatMessage"
-					},
+					"viewLevel": 1
+				},"InitDetail": {
+					"viewName": "InitDetail",
+					"viewId": "idInitDetail",
+					"controlAggregation": "detailPages",
 					"viewLevel": 1
 				},
 				"DialogFlow": {

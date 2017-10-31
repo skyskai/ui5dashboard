@@ -1,0 +1,11 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"  xmlns:l="sap.ui.layout" controllerName="ysc.websocket.controller.InitDetail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App backgroundColor="#2F3C48">
+	<Page showHeader="false" id="idInit">
+		<content>
+			<Title width="100%" text="{i18n>initPageTitle}" class="InitTitle" />
+			<html:iframe frameBorder="0" scrolling="no" width="100%" height="100%" src="./model/solar.html"/>
+		</content>
+	</Page>
+	</App>
+</mvc:View>

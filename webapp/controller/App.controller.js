@@ -28,6 +28,9 @@ sap.ui.define([
 		    });
 		    
 		    this.oWS.attachMessage(function (oControlEvent) {
+		    	//예외인 화면 정의
+		    	
+		    	
 		        // var oEntry = jQuery.parseJSON(oControlEvent.getParameter('data')).data;
 		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
 		        //add Request Text to Upper notification item
