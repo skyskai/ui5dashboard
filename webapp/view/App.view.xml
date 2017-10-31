@@ -4,7 +4,7 @@
 		<pages>
 		  <Page showHeader="false">	
 				<tnt:ToolHeader>
-					<Button icon="sap-icon://menu2" type="Transparent" press=".onPressHamburger">
+					<Button id="_idHamburger"  icon="sap-icon://menu2" type="Emphasized" press=".onPressHamburger">
 						<layoutData>
 							<OverflowToolbarLayoutData priority="NeverOverflow"/>
 						</layoutData>

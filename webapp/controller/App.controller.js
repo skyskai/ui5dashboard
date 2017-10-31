@@ -25,7 +25,15 @@ sap.ui.define([
 		    
 		    var that = this;
 		    this.oWS.attachOpen(function(){
-		    	MessageToast.show("서버에 연결되었습니다.");	
+		    	var i18n = that.getResourceBundle();
+		    	var oMenu = that.byId("_idHamburger");
+		    	oMenu.setType("Transparent");
+		    		
+		    
+		    	oMenu.setType("Reject");
+		    	that._addTextToChat(i18n.getText("connected"),"System","sap-icon://customer");
+		    	MessageToast.show(i18n.getText("connected"));
+		    
 		    });
 		    
 		    this.oWS.attachMessage(function (oControlEvent) {
@@ -35,7 +43,7 @@ sap.ui.define([
 		        // var oEntry = jQuery.parseJSON(oControlEvent.getParameter('data')).data;
 		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
 		        //add Request Text to Upper notification item
-		        that._addTextToChat(oReturnData.forUIRequest);
+		        that._addTextToChat(oReturnData.forUIRequest,"You","sap-icon://message-success");
 		        
 		       
 		        //navTo
@@ -99,19 +107,27 @@ sap.ui.define([
 		     
 		       // error handling
 		    this.oWS.attachError(function (oControlEvent) {
-		    	MessageToast.show('서버와의 연결에 실패하였습니다.');
+		    	var i18n = that.getResourceBundle();
+		    	var oMenu = that.byId("_idHamburger");
+		    	oMenu.setType("Reject");
+		    	that._addTextToChat(i18n.getText("connectionFailed"),"System","sap-icon://message-error");
+		    	MessageToast.show(i18n.getText("connectionFailed"));
 		       }); 
 		        
 		       // onConnectionClose
 		    this.oWS.attachClose(function (oControlEvent) {
-		    	MessageToast.show('서버와의 연결이 끊겼습니다.');
+		    	var i18n = that.getResourceBundle();
+		    	var oMenu = that.byId("_idHamburger");
+		    	oMenu.setType("Reject");
+		    	that._addTextToChat(i18n.getText("disconnected"),"System","sap-icon://message-error");
+		    	MessageToast.show(i18n.getText("disconnected"));
 		       });	
 		},
 		
-		_addTextToChat:function(newText){
+		_addTextToChat:function(newText,sUsername,sIcon){
 			var locModel = this.getModel("localModel");
 			var aData = locModel.getData();
-			aData.Chat.push({Text:newText,Username:"You",Datetime:new Date(),Icon:"sap-icon://customer"});
+			aData.Chat.push({Text:newText,Username:sUsername,Datetime:new Date(),Icon:sIcon});
 			locModel.refresh();
 		},
 		onPressHamburger:function(oEvent){
@@ -136,5 +152,6 @@ sap.ui.define([
 				
 			}
 		}
+		
     });
 });
