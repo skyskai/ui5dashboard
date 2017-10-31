@@ -7,7 +7,8 @@ sap.ui.define([
 	return Controller.extend("ysc.websocket.controller.App", {
 		
 		onInit:function(){
-			//local model
+			
+		   //local model
 			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]};
 			var oViewModel = new sap.ui.model.json.JSONModel();
 			oViewModel.setData(oLocalData);
@@ -37,6 +38,7 @@ sap.ui.define([
 		        var oResult = JSON.parse(oReturnData.forUIresults);
 		         //MessageToast.show("Received:"+oResult.Action);
 		        switch (oResult.Action) {
+		        	//Country, Category, Product를 년도별로 매출 출력
 		        	case "input.SalesCategory_Year":
 		        		switch (oResult.Parameters.SalesCategory) {
 		        			case "Country":
@@ -87,27 +89,9 @@ sap.ui.define([
 					     	break;
 		        	default:
 		        }
-		        // switch (oReturnData.action) {
-		        // 	case "navigate": //화면 전환 
-		        // 		oRouter.navTo(oReturnData.target);
-		        // 		break;
-		        //     case "valueSelect":
-		        // 	default:
-		        // 	  var aBars = oInitModel.getObject("/bars");
-		        // 	  for(var i=0;i<aBars.length;i++){
-		        // 	  	var sCurrentRow = "/bars/"+i+"/Selected";
-		        // 	  	if(aBars[i].Category === oReturnData.target){
-		        // 	  		oInitModel.setProperty(sCurrentRow,true);
-		        // 	  	} else {
-		        // 	  		oInitModel.setProperty(sCurrentRow,false);
-		        // 	  	}
-		        // 	  }
-		        // 	  oInitModel.setProperty("/product_detail_show",true);
-		        // }
-		        
+		    });
 		       
-		       });
-		       
+		     
 		       // error handling
 		    this.oWS.attachError(function (oControlEvent) {
 		    	MessageToast.show('서버와의 연결에 실패하였습니다.');
@@ -118,12 +102,12 @@ sap.ui.define([
 		    	MessageToast.show('서버와의 연결이 끊겼습니다.');
 		       });	
 		},
+		
 		_addTextToChat:function(newText){
 			var locModel = this.getModel("localModel");
 			var aData = locModel.getData();
 			aData.Chat.push({Text:newText,Username:"You",Datetime:new Date(),Icon:"sap-icon://customer"});
 			locModel.refresh();
 		}
-
-	});
+    });
 });
