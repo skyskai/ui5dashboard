@@ -7,6 +7,7 @@ sap.ui.define([
 	return Controller.extend("ysc.websocket.controller.App", {
 		
 		onInit:function(){
+			this._oSplitApp = this.byId("idAppControl");
 			
 		   //local model
 			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]};
@@ -108,6 +109,11 @@ sap.ui.define([
 			var aData = locModel.getData();
 			aData.Chat.push({Text:newText,Username:"You",Datetime:new Date(),Icon:"sap-icon://customer"});
 			locModel.refresh();
+		},
+		onPressHamburger:function(oEvent){
+			if(this._oSplitApp.isMasterShown()){
+			   this._oSplitApp.hideMaster()	;
+			} else { this._oSplitApp.showMaster();}
 		}
     });
 });

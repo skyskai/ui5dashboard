@@ -1,5 +1,14 @@
 <mvc:View controllerName="ysc.websocket.controller.App" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-	<SplitApp id="idAppControl">
+	xmlns:mvc="sap.ui.core.mvc" xmlns:tnt="sap.tnt" displayBlock="true" xmlns="sap.m">
+		<tnt:ToolHeader>
+		<Button icon="sap-icon://menu2" type="Transparent" press=".onPressHamburger">
+			<layoutData>
+				<OverflowToolbarLayoutData priority="NeverOverflow" />
+			</layoutData>
+		</Button>
+		<ToolbarSpacer />
+		<Title level="H3" text="SAMSUNG DASHBOARD"/>
+		</tnt:ToolHeader>
+	<SplitApp id="idAppControl" mode="HideMode">
 	</SplitApp>
 </mvc:View>
