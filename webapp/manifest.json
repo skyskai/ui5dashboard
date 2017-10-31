@@ -125,7 +125,7 @@
 			}, {
 				"name": "dialogFlow",
 				"pattern": "DialogFlow",
-				"target": ["DialogFlow"]
+				"target": ["Master","DialogFlow"]
 			}],
 			"targets": {
 				"Master": {

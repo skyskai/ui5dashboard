@@ -28,9 +28,6 @@ sap.ui.define([
 		    	var i18n = that.getResourceBundle();
 		    	var oMenu = that.byId("_idHamburger");
 		    	oMenu.setType("Transparent");
-		    		
-		    
-		    	oMenu.setType("Reject");
 		    	that._addTextToChat(i18n.getText("connected"),"System","sap-icon://customer");
 		    	MessageToast.show(i18n.getText("connected"));
 		    

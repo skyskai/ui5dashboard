@@ -1,8 +1,8 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ysc.websocket.controller.SocketSender"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-			<Page title="Socket Sender">
+			<Page title="Socket Sender" showHeader="false">
 				<content>
-					<html:iframe width="350" height="100%" src="https://console.dialogflow.com/api-client/demo/embedded/ecd4a909-9abb-4c01-ad27-9a77233fd0b7">
+					<html:iframe width="500" height="500px" src="https://console.dialogflow.com/api-client/demo/embedded/ecd4a909-9abb-4c01-ad27-9a77233fd0b7">
 					</html:iframe>
 					<!--<VBox>-->
 					<!--	<Label text="Type"/>-->
