@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls"
 	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:viz.data="sap.viz.ui5.data" xmlns:layout="sap.ui.layout"
 	controllerName="ysc.websocket.controller.SalesByCountry" xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Dashboard" showHeader="false" >
+	<Page  showHeader="true" >
 		<content>
 			<layout:FixFlex id="chartFixFlex" minFlexSize="400" fixFirst="true">
 				<layout:fixContent>
