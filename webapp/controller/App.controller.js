@@ -10,7 +10,8 @@ sap.ui.define([
 			this._oSplitApp = this.byId("idAppControl");
 			
 		   //local model
-			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]};
+			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]
+			};
 			var oViewModel = new sap.ui.model.json.JSONModel();
 			oViewModel.setData(oLocalData);
 			this.getView().setModel(oViewModel, "localModel");
@@ -115,8 +116,25 @@ sap.ui.define([
 		},
 		onPressHamburger:function(oEvent){
 			if(this._oSplitApp.isMasterShown()){
-			   this._oSplitApp.hideMaster()	;
-			} else { this._oSplitApp.showMaster();}
+			  
+			  //mobile only
+			  if(sap.ui.Device.system.phone){
+				  var oDetail = this._oSplitApp.getDetailPages()[0];
+	              this._oSplitApp.toDetail(oDetail, "flip");
+			  } else {
+			  	this._oSplitApp.hideMaster()	;
+			  }
+                 
+			} else { 
+				
+				if(sap.ui.Device.system.phone){
+				 var oMaster = this._oSplitApp.getMasterPages()[0];
+                 this._oSplitApp.toMaster(oMaster, "flip");
+				} else {
+					this._oSplitApp.showMaster();
+				}
+				
+			}
 		}
     });
 });
