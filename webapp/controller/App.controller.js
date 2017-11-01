@@ -97,6 +97,19 @@ sap.ui.define([
 						case "input.CountryCompare":
 					     	oRouter.navTo("salesCompare",oResult.Parameters);
 					     	break;
+					     //화면 이동
+						case "input.moveBack":
+							switch (oResult.Parameters.MoveTarget) {
+								case "Home":
+									oRouter.navTo("");
+									break;
+								case "Back":
+									window.history.go(-1);
+									break;
+								default:
+							}
+					     	
+					     	break;
 		        	default:
 		        }
 		    });
