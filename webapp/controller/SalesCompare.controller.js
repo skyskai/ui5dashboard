@@ -22,7 +22,7 @@ sap.ui.define([
 			},
 			_onObjectMatched:function(oEvent){
 				    var locModel = this.getModel("localModel");
-					var sYear = oEvent.getParameter("arguments").Year;
+				
 					var iYearFrom = oEvent.getParameter("arguments").YearFrom;
 					var iYearTo = oEvent.getParameter("arguments").YearTo;
 					var sCountryName = oEvent.getParameter("arguments").CountryName;
@@ -37,7 +37,13 @@ sap.ui.define([
 						value1: iYearTo})
 						];
 				    var aFilterTemp = new Filter({filters:aFilterYear,and:false});
-				    var aFilterCountry = new Filter({path: 'Country',operator: 'EQ',value1: sCountryName});
+				    //when countri is ALL
+				    var aFilterCountry = "";
+				    if(sCountryName==='ALL'){
+				     aFilterCountry = new Filter({path: 'Country',operator: 'ALL',value1: sCountryName});
+				    } else {
+				     aFilterCountry = new Filter({path: 'Country',operator: 'EQ',value1: sCountryName});
+				    }
 				    var aFilter = new Filter({filters:[aFilterTemp,aFilterCountry],and:true});
 					locModel.setProperty("/Country",sCountryName);
 					this._oTable.getBinding("items").filter(aFilter,"Application");

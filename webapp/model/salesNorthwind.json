@@ -745,6 +745,157 @@
    "Amount": 770,
    "Currency": "USD"
  }
+],
+"SalesByCountryAll":[
+ {
+   "Country": "Argentina",
+   "Amount1996": 3005.6,
+   "Amount1997": 7131.52,
+   "Amount1998": 9450.11,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Austria",
+   "Amount1996": 5672.8,
+   "Amount1997": 25990.13,
+   "Amount1998": 15040.07,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Belgium",
+   "Amount1996": 352.6,
+   "Amount1997": 34889.89,
+   "Amount1998": 20808.09,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Brazil",
+   "Amount1996": 29380.62,
+   "Amount1997": 61324.77,
+   "Amount1998": 59808.89,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Canada",
+   "Amount1996": 2808,
+   "Amount1997": 31048.31,
+   "Amount1998": 14489.49,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Denmark",
+   "Amount1996": 1968.2,
+   "Amount1997": 19468.4,
+   "Amount1998": 4460.95,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Finland",
+   "Amount1996": 6345.46,
+   "Amount1997": 15314.86,
+   "Amount1998": 12287.07,
+   "Currency": " USD "
+ },
+ {
+   "Country": "France",
+   "Amount1996": 16333.68,
+   "Amount1997": 62851.45,
+   "Amount1998": 29404.43,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Germany",
+   "Amount1996": 18497.88,
+   "Amount1997": 95072.61,
+   "Amount1998": 55020.01,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Ireland",
+   "Amount1996": 3822.68,
+   "Amount1997": 19333.45,
+   "Amount1998": 13446.08,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Italy",
+   "Amount1996": 8127.98,
+   "Amount1997": 7672.9,
+   "Amount1998": 17216.5,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Mexico",
+   "Amount1996": 13572.8,
+   "Amount1997": 20833.88,
+   "Amount1998": 9842.8,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Norway",
+   "Amount1996": 1549.6,
+   "Amount1997": 4862.4,
+   "Amount1998": 2729.5,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Poland",
+   "Amount1996": 5285.52,
+   "Amount1997": 8604.57,
+   "Amount1998": 858,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Portugal",
+   "Amount1996": 1509.6,
+   "Amount1997": 13005.03,
+   "Amount1998": 2715.71,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Spain",
+   "Amount1996": 3399.4,
+   "Amount1997": 17282.35,
+   "Amount1998": 25512.46,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Sweden",
+   "Amount1996": 11465.94,
+   "Amount1997": 17514.51,
+   "Amount1998": 29563.38,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Switzerland",
+   "Amount1996": 6631.8,
+   "Amount1997": 9313.12,
+   "Amount1998": 1056.5,
+   "Currency": " USD "
+ },
+ {
+   "Country": "UK",
+   "Amount1996": 25102.73,
+   "Amount1997": 33735.35,
+   "Amount1998": 22142.71,
+   "Currency": " USD "
+ },
+ {
+   "Country": "USA",
+   "Amount1996": 21773.17,
+   "Amount1997": 96220.57,
+   "Amount1998": 77491,
+   "Currency": " USD "
+ },
+ {
+   "Country": "Venezuela",
+   "Amount1996": 21477.92,
+   "Amount1997": 15615.13,
+   "Amount1998": 17280.13,
+   "Currency": " USD "
+ }
 ]
+
+
 
 }

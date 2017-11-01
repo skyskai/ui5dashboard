@@ -148,7 +148,11 @@ sap.ui.define([
 				}
 				
 			}
+		},
+		onPressHome:function(oEvnet){
+		  this.getRouter().navTo("");	
 		}
+		
 		
     });
 });

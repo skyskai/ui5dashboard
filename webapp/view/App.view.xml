@@ -9,6 +9,11 @@
 							<OverflowToolbarLayoutData priority="NeverOverflow"/>
 						</layoutData>
 					</Button>
+					<Button  icon="sap-icon://home"  type="Transparent" press=".onPressHome">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="NeverOverflow"/>
+						</layoutData>
+					</Button>
 					<ToolbarSpacer/>
 					<Title level="H3" text="{i18n>mainTitle}"/>
 				</tnt:ToolHeader>

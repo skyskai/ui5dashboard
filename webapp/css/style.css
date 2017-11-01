@@ -49,14 +49,14 @@
 .sapMTitleStyleAuto.InitTitle {
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-size: 4vw;
-  padding: 2vw 2vw;
+  
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
   
   
    color: #e0dfdc;
-    background-color: #2F3C48;
+    
     letter-spacing: .1em;
     text-shadow: 
       0 -1px 0 #fff, 

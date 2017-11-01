@@ -4,6 +4,7 @@
 	<Page showHeader="false" id="idInit">
 		<content>
 			<Title width="100%" text="{i18n>initPageTitle}" class="InitTitle" />
+			<Title width="100%" text="{i18n>initPageTitleSub}" class="InitTitle" />
 			<html:iframe frameBorder="0" scrolling="no" width="100%" height="600px" src="./model/solar.html"/>
 		</content>
 	</Page>
