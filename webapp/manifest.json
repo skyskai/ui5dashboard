@@ -126,6 +126,10 @@
 				"name": "dialogFlow",
 				"pattern": "DialogFlow",
 				"target": ["Master","DialogFlow"]
+			}, {
+				"name": "Launchpad",
+				"pattern": "Launchpad",
+				"target": ["Master","Launchpad"]
 			}],
 			"targets": {
 				"Master": {
@@ -157,6 +161,11 @@
 				},"InitDetail": {
 					"viewName": "InitDetail",
 					"viewId": "idInitDetail",
+					"controlAggregation": "detailPages",
+					"viewLevel": 1
+				},"Launchpad": {
+					"viewName": "Launchpad",
+					"viewId": "idLaunchpad",
 					"controlAggregation": "detailPages",
 					"viewLevel": 1
 				},

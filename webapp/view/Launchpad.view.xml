@@ -1,0 +1,31 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"  xmlns:layout="sap.ui.layout" controllerName="ysc.websocket.controller.Launchpad"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+			<Page showHeader="false">
+				<content>
+					<!--<layout:Grid defaultSpan="L2 M6 S6" content="{localModel>/Tiles}">-->
+					<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles}">
+						<GenericTile
+						header="{localModel>title}"
+						subheader="{localModel>subtitle}"
+						mode="{localModel>mode}"
+						press="press"
+						class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+						<tileContent>
+							<TileContent unit="{localModel>unit}" footer="{localModel>footer}">
+								<content>
+									<NumericContent
+										value="{localModel>kpivalue}"
+										valueColor="{localModel>color}"
+										indicator="{localModel>trend}"
+										scale="{localModel>scale}" />
+								</content>
+							</TileContent>
+						</tileContent>
+					</GenericTile>
+					</layout:HorizontalLayout>
+					<!--</layout:Grid>-->
+				</content>
+			</Page>
+		
+</mvc:View>
