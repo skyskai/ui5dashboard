@@ -107,6 +107,10 @@
 				"pattern": "",
 				"target": ["Master","InitDetail"]
 			}, {
+				"name": "slides",
+				"pattern": "Slides",
+				"target": ["Master","Slides"]
+			}, {
 				"name": "salesByCountry",
 				"pattern": "SalesCountry/{Year}",
 				"target": ["Master", "SalesByCountry"]
@@ -126,7 +130,7 @@
 				"name": "dialogFlow",
 				"pattern": "DialogFlow",
 				"target": ["Master","DialogFlow"]
-			}, {
+			},{
 				"name": "Launchpad",
 				"pattern": "Launchpad",
 				"target": ["Master","Launchpad"]
@@ -161,6 +165,11 @@
 				},"InitDetail": {
 					"viewName": "InitDetail",
 					"viewId": "idInitDetail",
+					"controlAggregation": "detailPages",
+					"viewLevel": 1
+				},"Slides": {
+					"viewName": "Slides",
+					"viewId": "idSlides",
 					"controlAggregation": "detailPages",
 					"viewLevel": 1
 				},"Launchpad": {

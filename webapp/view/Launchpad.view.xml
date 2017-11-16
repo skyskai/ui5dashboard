@@ -4,26 +4,168 @@
 			<Page showHeader="false">
 				<content>
 					<!--<layout:Grid defaultSpan="L2 M6 S6" content="{localModel>/Tiles}">-->
-					<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles}">
-						<GenericTile
-						header="{localModel>title}"
-						subheader="{localModel>subtitle}"
-						mode="{localModel>mode}"
-						press="press"
-						class="sapUiTinyMarginBegin sapUiTinyMarginTop">
-						<tileContent>
-							<TileContent unit="{localModel>unit}" footer="{localModel>footer}">
-								<content>
-									<NumericContent
-										value="{localModel>kpivalue}"
-										valueColor="{localModel>color}"
-										indicator="{localModel>trend}"
-										scale="{localModel>scale}" />
-								</content>
-							</TileContent>
-						</tileContent>
-					</GenericTile>
-					</layout:HorizontalLayout>
+					<!--<Panel headerTex="영업">-->
+					<IconTabBar
+						class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter
+							    icon="sap-icon://travel-request"
+								text="견적관리"
+								count="65">
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles1}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+							<IconTabSeparator icon="sap-icon://open-command-field" />
+							<IconTabFilter
+							    icon="sap-icon://order-status"
+								text="주문관리"
+								count="69" >
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles2}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+							<IconTabSeparator icon="sap-icon://open-command-field" />
+							<IconTabFilter
+							    icon="sap-icon://shipping-status"
+								text="출하관리"
+								count="58">
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles3}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+							<IconTabSeparator icon="sap-icon://open-command-field" />
+							<IconTabFilter
+							    icon="sap-icon://sales-notification"
+								text="매출관리"
+								count="26">
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles4}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+							<!--<IconTabSeparator icon="sap-icon://open-command-field" />-->
+							<IconTabFilter
+							    icon="sap-icon://batch-payments"
+								text="채권관리"
+								count="22">
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles5}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+							<!--<IconTabSeparator icon="sap-icon://open-command-field" />-->
+							<IconTabFilter
+							    icon="sap-icon://product"
+								text="재고관리">
+								<layout:HorizontalLayout allowWrapping="true" content="{localModel>/Tiles5}">
+									<GenericTile
+									header="{localModel>title}"
+									subheader="{localModel>subtitle}"
+									mode="{localModel>mode}"
+									press="press"
+									class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+									<tileContent>
+										<TileContent unit="{localModel>unit}" footer="{localModel>footer}" footerColor="{localModel>footerColor}">
+											<content>
+												<NumericContent
+													value="{localModel>kpivalue}"
+													valueColor="{localModel>color}"
+													indicator="{localModel>trend}"
+													scale="{localModel>scale}" />
+											</content>
+										</TileContent>
+									</tileContent>
+								</GenericTile>
+								</layout:HorizontalLayout>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					
+					<!--</Panel>-->
 					<!--</layout:Grid>-->
 				</content>
 			</Page>

@@ -28,7 +28,7 @@ sap.ui.define([
 		    	var i18n = that.getResourceBundle();
 		    	var oMenu = that.byId("_idHamburger");
 		    	oMenu.setType("Transparent");
-		    	that._addTextToChat(i18n.getText("connected"),"System","sap-icon://customer");
+		    	that._addTextToChat(i18n.getText("connected"),"System","sap-icon://message-success");
 		    	MessageToast.show(i18n.getText("connected"));
 		    
 		    });
@@ -40,7 +40,7 @@ sap.ui.define([
 		        // var oEntry = jQuery.parseJSON(oControlEvent.getParameter('data')).data;
 		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
 		        //add Request Text to Upper notification item
-		        that._addTextToChat(oReturnData.forUIRequest,"You","sap-icon://message-success");
+		        that._addTextToChat(oReturnData.forUIRequest,"You","sap-icon://customer");
 		        
 		       
 		        //navTo
@@ -119,7 +119,7 @@ sap.ui.define([
 		    this.oWS.attachError(function (oControlEvent) {
 		    	var i18n = that.getResourceBundle();
 		    	var oMenu = that.byId("_idHamburger");
-		    	oMenu.setType("Reject");
+		    	// oMenu.setType("Reject");
 		    	that._addTextToChat(i18n.getText("connectionFailed"),"System","sap-icon://message-error");
 		    	MessageToast.show(i18n.getText("connectionFailed"));
 		       }); 
@@ -128,7 +128,7 @@ sap.ui.define([
 		    this.oWS.attachClose(function (oControlEvent) {
 		    	var i18n = that.getResourceBundle();
 		    	var oMenu = that.byId("_idHamburger");
-		    	oMenu.setType("Reject");
+		    	// oMenu.setType("Reject");
 		    	that._addTextToChat(i18n.getText("disconnected"),"System","sap-icon://message-error");
 		    	MessageToast.show(i18n.getText("disconnected"));
 		       });	
@@ -164,7 +164,21 @@ sap.ui.define([
 		},
 		onPressHome:function(oEvnet){
 		  this.getRouter().navTo("");	
+		},
+		//PT mode
+		onPressPT:function(oEvent){
+			this.getRouter().navTo("slides");	
+		},
+		//Websocket switch
+		onPressSwitch:function(oEvent){
+			var sState = oEvent.getParameters()['state'];
+			if(sState === false){
+				this.oWS.close();
+			} else {
+				this.oWS.open();
+			}
 		}
+		
 		
 		
     });

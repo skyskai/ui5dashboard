@@ -4,10 +4,19 @@
     font-family:'Malgun Gothic' !important;
 }
 /*Panel border and shadow */
-.sapMPanel.sapUiResponsiveMargin{
+.sapMPanel{
 	border: solid 0.5px #bdc3c7;
     box-shadow: 5px 5px 5px #BDC3C7;
 }
+/*IconTabBar의 테두리 없애기 */
+.sapMITBContent{
+	border:0px;
+}
+/*타일 헤더 색상 */
+/*.OneByOne.sapMGTHdrContent{*/
+/*	background-color : rgba(241, 115, 47,1);*/
+/*	margin:0px;*/
+/*}*/
 
 .sapMPanelHdr{
 	/*background-color : #2c3e50;*/
@@ -16,11 +25,11 @@
 	background: #4B79A1;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
 }
 
-.sapMPanel.sapUiResponsiveMargin.noShadow{
+
+
+.sapMPanel.noShadow{
 	border-bottom: 0px !important;
 	box-shadow: none;
 }
@@ -32,14 +41,47 @@
 .sapMShellBG.sapUiGlobalBackgroundImage{
 	/*background-image:url(http://www.twitrcovers.com/wp-content/uploads/2012/09/Hero.jpg);*/
 	background-image:url(./marvel01.jpg);
-	
-  background-size: cover;
+    background-size: cover;
  /*   filter: blur(3px);*/
 }
 /*fore backgrond opacity */
+/*.sapMNavItem.sapUiView.sapUiXMLView{*/
+/*opacity: 0.2; */
+/*}*/
+/*.sapMPage.sapMPageBgStandard.sapMPageBusyCoversAll{*/
+	/*opacity: 0.3; */
+/*	background-color: #ffffff;*/
+/*        background-color: rgba( 255, 255, 255, 0.5 );*/
+/*}*/
+/*.sapUiFixFlex.sapUiFixFlexRow{*/
+/*	background-color: #ffffff;*/
+/*        background-color: rgba( 255, 255, 255, 0.5 );*/
+/*}*/
 .sapMShellContent.sapMShellGlobalInnerBackground{
-	opacity:0.8;
+	/*opacity:0.8;*/
+}
 
+.sapContrast.sapContrastPlus.sapMIBar.sapMTB.sapMTB-Auto-CTX.sapMTBInactive.sapMTBNewFlex.sapTntToolHeader{
+    
+	/*background:*/
+	/*	-webkit-linear-gradient(45deg, hsla(7, 100%, 42%, 1) 0%, hsla(7, 100%, 42%, 0) 70%),*/
+	/*	-webkit-linear-gradient(315deg, hsla(177, 93%, 43%, 1) 10%, hsla(177, 93%, 43%, 0) 80%),*/
+	/*	-webkit-linear-gradient(225deg, hsla(259, 92%, 45%, 1) 10%, hsla(259, 92%, 45%, 0) 80%),*/
+	/*	-webkit-linear-gradient(135deg, hsla(193, 96%, 48%, 1) 100%, hsla(193, 96%, 48%, 0) 70%);*/
+	/*background:*/
+	/*	linear-gradient(45deg, hsla(7, 100%, 42%, 1) 0%, hsla(7, 100%, 42%, 0) 70%),*/
+	/*	linear-gradient(135deg, hsla(177, 93%, 43%, 1) 10%, hsla(177, 93%, 43%, 0) 80%),*/
+	/*	linear-gradient(225deg, hsla(259, 92%, 45%, 1) 10%, hsla(259, 92%, 45%, 0) 80%),*/
+	/*	linear-gradient(315deg, hsla(193, 96%, 48%, 1) 100%, hsla(193, 96%, 48%, 0) 70%);*/
+ /*  background :*/
+	/*radial-gradient(circle at 1.98% 89.05%, #003973, transparent 100%),*/
+	/*radial-gradient(circle at 98.02% 76.02%, #E5E5BE, transparent 100%),*/
+	/*radial-gradient(circle at 50% 50%, #000000, #000000 100%);*/
+	border:0px;
+	background:radial-gradient(circle at 19.43% 46.04%, #DD495D, transparent 100%),radial-gradient(circle at 90.21% 48.13%, #F1732F, transparent 100%),radial-gradient(circle at 50% 50%, #8b104c, #8b104c 100%)
+	/*background : url(./menu_top_pattern.png) repeat-y;*/
+
+	
 }
 /* top line */
 .sapMShellBrandingBar{
@@ -77,6 +119,205 @@
       0 15px 0 #121212, 
       0 22px 30px rgba(0, 0, 0, 0.9);
   
+/*Solar */
+@keyframes spinsun {
+  0% { transform: rotate(0); }
+  100%   { transform: rotate(-360deg); }
+}
+@keyframes shadow {
+  0% { background-position: 130% 0%; }
+  33%{ background-position: 50% 0%; }
+  55% { background-position: 0% 0%; }
+  80%{ background-position: -50% 0%; }
+  100%{ background-position: -50% 0%; }
+}
+@keyframes orbitmercury {
+  0% { z-index:2; transform: rotateY(0); }
+  49% { z-index:2; }
+  50% { z-index:-2; }
+  99% { z-index:-2; }
+  100%   { z-index:2; transform: rotateY(360deg); }
+}
+@keyframes orbitvenus {
+  0% { z-index:3; transform: rotateY(0); }
+  49% { z-index:3; }
+  50% { z-index:-3; }
+  99% { z-index:-3; }
+  100%   { z-index:3; transform: rotateY(360deg); }
+}
+@keyframes orbitearth {
+  0% { z-index:4; transform: rotateY(0); }
+  49% {z-index:4;}
+  50% {z-index:-4;}
+  99% {z-index:-4;}
+  100%   { z-index:4; transform: rotateY(360deg);}
+}
+@keyframes orbitmars {
+  0% { z-index:5; transform: rotateY(0); }
+  49% { z-index:5; }
+  50% { z-index:-5; }
+  99% { z-index:-5; }
+  100%   { z-index:5; transform: rotateY(360deg); }
+}
+@keyframes orbitjupiter {
+  0% { z-index:6; transform: rotateY(270); }
+  49% { z-index:6; }
+  50% { z-index:-6; }
+  99% { z-index:-6; }
+  100%   { z-index:6; transform: rotateY(360deg); }
+}
+@keyframes orbitsaturn {
+  0% { z-index:7; transform: rotateY(270); }
+  49% { z-index:7; }
+  50% { z-index:-7; }
+  99% { z-index:-7; }
+  100%   { z-index:7; transform: rotateY(360deg); }
+}
+/* Keep planet image flat */
+@keyframes anti-spin {
+  from { transform: rotateY(0); }
+  to   { transform: rotateY(-360deg); }
+}
+@keyframes anti-spin-rings {
+  from { transform: rotateY(0) rotateX(73deg); }
+  to   { transform: rotateY(-360deg) rotateX(73deg); }
+}
+
+/* scene wrapper */
+.solar{
+	height: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+.wrapper{
+  position:relative;
+  margin: 0 auto;
+  display:block;
+  margin-top: 200px;
+  perspective: 1000px;
+	perspective-origin: 60% 50%;
+  transform: rotate(-10deg);
   
+}
+.wrapper > div {
+  position: relative;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  height: 0px;
+}
+.sun {
+  width: 15vw;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  height: 125px !important;
+}
+.sun .star {
+  width: 15vw; /*250px*/
+  height: 15vw;
+  background: url(http://www.waynedunkley.com/img/solar_system/sun.png) no-repeat;
+    /*background: url(./yujeong.jpg) no-repeat;*/
+  background-size: cover;
+  border-radius: 250px;
+  margin: 0 auto;
+  animation: spinsun 40s infinite linear;
+}
+.planet {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  animation-iteration-count: infinite;
+  overflow:hidden;
+}
+.shadow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: transparent url(http://www.waynedunkley.com/img/solar_system/shadow.png) 0% 0% no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.mercury {
+  position: absolute;
+  width: 400px;
+  z-index:2;
+  animation: orbitmercury 12s infinite linear;
+  top: -7.5px; /*half of planets height to keep orbits in line*/
+}
+.mercury .planet {
+  width:1vw; /*15px*/
+  height:1vw;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/mercury.png);
+  animation: anti-spin 12s infinite linear;
+}
+.mercury .shadow {
+  animation: shadow 12s infinite linear;
+}
+.venus {
+  position: absolute;
+  width: 506px;
+  z-index:3;
+  animation: orbitvenus 15s infinite linear;
+  top: -19px;
+}
+.venus .planet {
+  width:2.3vw; /*38px*/
+  height:2.3vw;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/venus.png);
+  animation: anti-spin 15s infinite linear;
+}
+.venus .shadow {
+  animation: shadow 15s infinite linear;
+}
+.earth {
+  position: absolute;
+  width: 610px;
+  z-index:4;
+  animation: orbitearth 20s infinite linear;
+  top: -20px;
+}
+.earth .planet {
+  width:2.4vw; /*40px*/
+  height:2.4vw;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/earth.png?v=2);
+  animation: anti-spin 20s infinite linear;
+}
+.earth .shadow {
+  animation: shadow 20s infinite linear;
+}
+.mars {
+  position: absolute;
+  width: 706px;
+  z-index:5;
+  animation: orbitmars 30s infinite linear;
+  top: -11px;
+}
+.mars .planet {
+  width:1.3vw; /*22px*/
+  height:1.3vw;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/mars.png);
+  animation: anti-spin 30s infinite linear;
+}
+.mars .shadow {
+  animation: shadow 30s infinite linear;
+}
+.jupiter {
+  position: absolute;
+  width: 1100px;
+  z-index:6;
+  animation: orbitjupiter 50s infinite linear;
+  top: -64px;
+}
+.jupiter .planet {
+  width:7.7vw; /*128px*/
+  height:7.7vw;
+  background-image: url(http://www.waynedunkley.com/img/solar_system/jupiter.png);
+  animation: anti-spin 50s infinite linear;
+}
+.jupiter .shadow {
+  animation: shadow 50s infinite linear;
+}
   
 }

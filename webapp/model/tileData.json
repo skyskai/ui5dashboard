@@ -1,0 +1,118 @@
+{
+	"Tiles1": [{
+		"title": "견적등록",
+		"subtitle":"영업담당자 기준",
+		"mode": "ContentMode",
+		"footer": "신규",
+		"footerColor":"Good",
+		"kpivalue": 5,
+		"scale": "건"
+	}, {
+		"title": "견적현황",
+		"mode": "ContentMode",
+		"footer": "미승인",
+		"footerColor":"Error",
+		"kpivalue": 5,
+		"scale": "건"
+	}, {
+		"title": "계약생성",
+		"mode": "ContentMode",
+		"footer": "진행중",
+		"kpivalue": 55,
+		"scale": "건"
+	}],
+	"Tiles2": [{
+		"title": "Web오더 조회",
+		"mode": "ContentMode",
+		"footer": "등록 건수",
+		"kpivalue": 10,
+		"scale": "건"
+	},{
+		"title": "Web오더 미승인",
+		"mode": "ContentMode",
+		"footer": "결재중",
+		"footerColor":"Good",
+		"kpivalue": 5,
+		"scale": "건"
+	},{
+		"title": "예외오더 조회",
+		"subtitle":"무상,반품,Credit",
+		"mode": "ContentMode",
+		"footer": "등록 건수",
+		"kpivalue": 20,
+		"scale": "건"
+	},{
+		"title": "예외오더 승인 현황",
+		"mode": "ContentMode",
+		"footer": "미승인",
+		"footerColor":"Critical",
+		"kpivalue": 10,
+		"scale": "건"
+	},{
+		"title": "수지할당 요청",
+		"mode": "ContentMode",
+		"footer": "진행중",
+		"kpivalue": 19,
+		"scale": "건"
+	},{
+		"title": "Delivery 생성 대상",
+		"subtitle":"SO 승인후 Dlv. 미생성",
+		"mode": "ContentMode",
+		"footer": "지연",
+		"footerColor":"Critical",
+		"kpivalue": 5,
+		"scale": "건"
+	}],
+	"Tiles3":[{
+		"title": "Delivery 생성 현황",
+		"mode": "ContentMode",
+		"kpivalue": 25,
+		"scale": "건"
+	},{
+		"title": "미출하 대상 현황",
+		"mode": "ContentMode",
+		"kpivalue": 5,
+		"scale": "건"
+	},{
+		"title": "배차 대상",
+		"subtitle":"화성/에너지",
+		"mode": "ContentMode",
+		"kpivalue": 7,
+		"scale": "건"
+	},{
+		"title": "수출 LC 미등록",
+		"mode": "ContentMode",
+		"kpivalue": 3,
+		"scale": "건"
+	},{
+		"title": "수출 통관 미등록",
+		"mode": "ContentMode",
+		"kpivalue": 8,
+		"scale": "건"
+	},{
+		"title": "수출 선적",
+		"mode": "ContentMode",
+		"kpivalue": 10,
+		"scale": "건"
+	}],
+	"Tiles4":[{
+		"title": "Billing 대상",
+		"subtitle":"출하후 Billing 미처리",
+		"mode": "ContentMode",
+		"kpivalue": 11,
+		"scale": "건"
+	},{
+		"title": "Billing List",
+		"mode": "ContentMode",
+		"kpivalue": 15,
+		"scale": "건"
+	}],
+	"Tiles5":[{
+		"title": "Block 해제 요청",
+		"mode": "ContentMode",
+		"footer":"미결",
+		"kpivalue": 22,
+		"scale": "건"
+	}]
+
+}
