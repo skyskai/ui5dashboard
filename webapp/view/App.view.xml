@@ -14,7 +14,7 @@
 							<OverflowToolbarLayoutData priority="NeverOverflow"/>
 						</layoutData>
 					</Button>
-					<!--<Button  icon="sap-icon://projector"  type="Transparent" press=".onPressPT"/>-->
+					<Button  icon="sap-icon://projector"  type="Transparent" press=".onPressPT"/>
 					<Title level="H3" text="{i18n>mainTitle}"/>
 					<ToolbarSpacer/>
 					<Switch change=".onPressSwitch" state="true" visible="false"/>

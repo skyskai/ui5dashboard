@@ -23,12 +23,12 @@ border: solid 0.5px #bdc3c7;
     box-shadow: 2px 2px 2px #BDC3C7;	
 }
 .sapMPanelHdr{
-	/*background-color : #2c3e50;*/
+	background-color : #2c3e50;
 	color : white;
-	font-weight : bold;
-	background: #4B79A1;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/*font-weight : bold;*/
+	/*background: #4B79A1;  */
+	/*background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  */
+	/*background: linear-gradient(to right, #283E51, #4B79A1); */
 }
 
 
@@ -62,7 +62,7 @@ border: solid 0.5px #bdc3c7;
 /*        background-color: rgba( 255, 255, 255, 0.5 );*/
 /*}*/
 .sapMShellContent.sapMShellGlobalInnerBackground{
-	/*opacity:0.8;*/
+	opacity:0.8;
 }
 
 .sapContrast.sapContrastPlus.sapMIBar.sapMTB.sapMTB-Auto-CTX.sapMTBInactive.sapMTBNewFlex.sapTntToolHeader{
@@ -81,8 +81,8 @@ border: solid 0.5px #bdc3c7;
 	/*radial-gradient(circle at 1.98% 89.05%, #003973, transparent 100%),*/
 	/*radial-gradient(circle at 98.02% 76.02%, #E5E5BE, transparent 100%),*/
 	/*radial-gradient(circle at 50% 50%, #000000, #000000 100%);*/
-	border:0px;
-	background:radial-gradient(circle at 19.43% 46.04%, #DD495D, transparent 100%),radial-gradient(circle at 90.21% 48.13%, #F1732F, transparent 100%),radial-gradient(circle at 50% 50%, #8b104c, #8b104c 100%)
+	/*border:0px;*/
+	/*background:radial-gradient(circle at 19.43% 46.04%, #DD495D, transparent 100%),radial-gradient(circle at 90.21% 48.13%, #F1732F, transparent 100%),radial-gradient(circle at 50% 50%, #8b104c, #8b104c 100%)*/
 	/*background : url(./menu_top_pattern.png) repeat-y;*/
 
 	
