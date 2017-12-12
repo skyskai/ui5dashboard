@@ -1,0 +1,7 @@
+---
+applications:
+- name: ui5dashboard
+  memory: 256MB
+  instances: 1
+  buildpack: nodejs_buildpack
+  command: node server.js
