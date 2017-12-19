@@ -1,4 +1,3 @@
----
 applications:
 - name: ui5dashboard
   memory: 256MB

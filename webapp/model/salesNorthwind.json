@@ -377,6 +377,384 @@
    "Country": "Poland",
    "Amount": 858,
    "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Brazil",
+   "Amount": 29380.62,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "UK",
+   "Amount": 25102.73,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "USA",
+   "Amount": 21773.17,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Venezuela",
+   "Amount": 21477.92,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Germany",
+   "Amount": 18497.88,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "France",
+   "Amount": 16333.68,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Mexico",
+   "Amount": 13572.8,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Sweden",
+   "Amount": 11465.94,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Italy",
+   "Amount": 8127.98,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Switzerland",
+   "Amount": 6631.8,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Finland",
+   "Amount": 6345.46,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Austria",
+   "Amount": 5672.8,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Poland",
+   "Amount": 5285.52,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Ireland",
+   "Amount": 3822.68,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Spain",
+   "Amount": 3399.4,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Argentina",
+   "Amount": 3005.6,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Canada",
+   "Amount": 2808,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Denmark",
+   "Amount": 1968.2,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Norway",
+   "Amount": 1549.6,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Portugal",
+   "Amount": 1509.6,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2015,
+   "Country": "Belgium",
+   "Amount": 352.6,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "USA",
+   "Amount": 96220.57,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Germany",
+   "Amount": 95072.61,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "France",
+   "Amount": 62851.45,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Brazil",
+   "Amount": 61324.77,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Belgium",
+   "Amount": 34889.89,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "UK",
+   "Amount": 33735.35,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Canada",
+   "Amount": 31048.31,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Austria",
+   "Amount": 25990.13,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Mexico",
+   "Amount": 20833.88,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Denmark",
+   "Amount": 19468.4,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Ireland",
+   "Amount": 19333.45,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Sweden",
+   "Amount": 17514.51,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Spain",
+   "Amount": 17282.35,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Venezuela",
+   "Amount": 15615.13,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Finland",
+   "Amount": 15314.86,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Portugal",
+   "Amount": 13005.03,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Switzerland",
+   "Amount": 9313.12,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Poland",
+   "Amount": 8604.57,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Italy",
+   "Amount": 7672.9,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Argentina",
+   "Amount": 7131.52,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2016,
+   "Country": "Norway",
+   "Amount": 4862.4,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "USA",
+   "Amount": 77491,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Brazil",
+   "Amount": 59808.89,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Germany",
+   "Amount": 55020.01,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Sweden",
+   "Amount": 29563.38,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "France",
+   "Amount": 29404.43,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Spain",
+   "Amount": 25512.46,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "UK",
+   "Amount": 22142.71,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Belgium",
+   "Amount": 20808.09,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Venezuela",
+   "Amount": 17280.13,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Italy",
+   "Amount": 17216.5,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Austria",
+   "Amount": 15040.07,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Canada",
+   "Amount": 14489.49,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Ireland",
+   "Amount": 13446.08,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Finland",
+   "Amount": 12287.07,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Mexico",
+   "Amount": 9842.8,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Argentina",
+   "Amount": 9450.11,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Denmark",
+   "Amount": 4460.95,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Norway",
+   "Amount": 2729.5,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Portugal",
+   "Amount": 2715.71,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Switzerland",
+   "Amount": 1056.5,
+   "Currency": " USD "
+ },
+ {
+   "Year": 2017,
+   "Country": "Poland",
+   "Amount": 858,
+   "Currency": " USD "
  }
 ],
 "SalesByCategory":
@@ -521,6 +899,150 @@
  },
  {
    "Year": 1998,
+   "Category": "Condiments",
+   "Amount": 32167.3,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Beverages",
+   "Amount": 32216.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Dairy Products",
+   "Amount": 21100.6,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Meat/Poultry",
+   "Amount": 18479.8,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Confections",
+   "Amount": 17742.3,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Seafood",
+   "Amount": 14189.1,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Produce",
+   "Amount": 9438,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Condiments",
+   "Amount": 9010.3,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Category": "Grains/Cereals",
+   "Amount": 7970.2,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Dairy Products",
+   "Amount": 134900,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Confections",
+   "Amount": 121772.68,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Meat/Poultry",
+   "Amount": 98700.38,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Beverages",
+   "Amount": 89727.6,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Grains/Cereals",
+   "Amount": 84588.7,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Condiments",
+   "Amount": 76001.8,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Produce",
+   "Amount": 67393.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Category": "Seafood",
+   "Amount": 67010.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Beverages",
+   "Amount": 178458.5,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Confections",
+   "Amount": 79114.74,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Dairy Products",
+   "Amount": 77293,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Seafood",
+   "Amount": 64699.52,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Produce",
+   "Amount": 45918.1,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Grains/Cereals",
+   "Amount": 43458,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Category": "Meat/Poultry",
+   "Amount": 41639.42,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
    "Category": "Condiments",
    "Amount": 32167.3,
    "Currency": "USD"
@@ -744,6 +1266,222 @@
    "Product": "Laughing Lumberjack Lager",
    "Amount": 770,
    "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Côte de Blaye",
+   "Amount": 14756,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Steeleye Stout",
+   "Amount": 3024,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Ipoh Coffee",
+   "Amount": 2907.2,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Chang",
+   "Amount": 2827.2,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Chartreuse verte",
+   "Amount": 2044.8,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Chai",
+   "Amount": 1800,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Outback Lager",
+   "Amount": 1632,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Sasquatch Ale",
+   "Amount": 1008,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Lakkalikööri",
+   "Amount": 950.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Rhönbräu Klosterbier",
+   "Amount": 706.8,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Guaraná Fantástica",
+   "Amount": 504,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2015,
+   "Product": "Laughing Lumberjack Lager",
+   "Amount": 56,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Côte de Blaye",
+   "Amount": 14229,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Ipoh Coffee",
+   "Amount": 4802.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Rhönbräu Klosterbier",
+   "Amount": 3713.8,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Lakkalikööri",
+   "Amount": 3693.6,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Chang",
+   "Amount": 3686,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Chai",
+   "Amount": 3387.6,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Outback Lager",
+   "Amount": 3369,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Steeleye Stout",
+   "Amount": 3060,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Chartreuse verte",
+   "Amount": 1994.4,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Guaraná Fantástica",
+   "Amount": 1206,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Laughing Lumberjack Lager",
+   "Amount": 910,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2016,
+   "Product": "Sasquatch Ale",
+   "Amount": 812,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Côte de Blaye",
+   "Amount": 56652.5,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Lakkalikööri",
+   "Amount": 5688,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Chartreuse verte",
+   "Amount": 4248,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Ipoh Coffee",
+   "Amount": 3726,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Sasquatch Ale",
+   "Amount": 3290,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Chang",
+   "Amount": 3040,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Rhönbräu Klosterbier",
+   "Amount": 2906.25,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Chai",
+   "Amount": 2628,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Steeleye Stout",
+   "Amount": 2466,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Outback Lager",
+   "Amount": 2235,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Guaraná Fantástica",
+   "Amount": 1579.5,
+   "Currency": "USD"
+ },
+ {
+   "Year": 2017,
+   "Product": "Laughing Lumberjack Lager",
+   "Amount": 770,
+   "Currency": "USD"
  }
 ],
 "SalesByCountryAll":[
@@ -895,7 +1633,4 @@
    "Currency": " USD "
  }
 ]
-
-
-
 }
