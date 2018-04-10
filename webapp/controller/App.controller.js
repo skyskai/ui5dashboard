@@ -5,10 +5,10 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("ysc.websocket.controller.App", {
-		
+
 		onInit:function(){
 			this._oSplitApp = this.byId("idAppControl");
-			
+
 		   //local model
 			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]
 			};
@@ -18,11 +18,11 @@ sap.ui.define([
 			var that = this;
 			//Websocket오픈
 			//var sUrl = "ws://127.0.0.1:8000";//local
-			var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com";
+			var sUrl = "wss://ui5websocket.herokuapp.com/";
 			jQuery.sap.require("sap.ui.core.ws.WebSocket");
-			
+
 		    this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
-		    
+
 		    var that = this;
 		    this.oWS.attachOpen(function(){
 		    	var i18n = that.getResourceBundle();
@@ -30,19 +30,19 @@ sap.ui.define([
 		    	oMenu.setType("Transparent");
 		    	that._addTextToChat(i18n.getText("connected"),"System","sap-icon://message-success");
 		    	MessageToast.show(i18n.getText("connected"));
-		    
+
 		    });
-		    
+
 		    this.oWS.attachMessage(function (oControlEvent) {
 		    	//예외인 화면 정의
-		    	
-		    	
+
+
 		        // var oEntry = jQuery.parseJSON(oControlEvent.getParameter('data')).data;
 		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
 		        //add Request Text to Upper notification item
 		        that._addTextToChat(oReturnData.forUIRequest,"You","sap-icon://customer");
-		        
-		       
+
+
 		        //navTo
 		        var oRouter = that.getRouter();
 		        var oResult = JSON.parse(oReturnData.forUIresults);
@@ -108,13 +108,13 @@ sap.ui.define([
 									break;
 								default:
 							}
-					     	
+
 					     	break;
 		        	default:
 		        }
 		    });
-		       
-		     
+
+
 		       // error handling
 		    this.oWS.attachError(function (oControlEvent) {
 		    	var i18n = that.getResourceBundle();
@@ -122,8 +122,8 @@ sap.ui.define([
 		    	// oMenu.setType("Reject");
 		    	that._addTextToChat(i18n.getText("connectionFailed"),"System","sap-icon://message-error");
 		    	MessageToast.show(i18n.getText("connectionFailed"));
-		       }); 
-		        
+		       });
+
 		       // onConnectionClose
 		    this.oWS.attachClose(function (oControlEvent) {
 		    	var i18n = that.getResourceBundle();
@@ -131,9 +131,9 @@ sap.ui.define([
 		    	// oMenu.setType("Reject");
 		    	that._addTextToChat(i18n.getText("disconnected"),"System","sap-icon://message-error");
 		    	MessageToast.show(i18n.getText("disconnected"));
-		       });	
+		       });
 		},
-		
+
 		_addTextToChat:function(newText,sUsername,sIcon){
 			var locModel = this.getModel("localModel");
 			var aData = locModel.getData();
@@ -142,7 +142,7 @@ sap.ui.define([
 		},
 		onPressHamburger:function(oEvent){
 			if(this._oSplitApp.isMasterShown()){
-			  
+
 			  //mobile only
 			  if(sap.ui.Device.system.phone){
 				  var oDetail = this._oSplitApp.getDetailPages()[0];
@@ -150,24 +150,24 @@ sap.ui.define([
 			  } else {
 			  	this._oSplitApp.hideMaster()	;
 			  }
-                 
-			} else { 
-				
+
+			} else {
+
 				if(sap.ui.Device.system.phone){
 				 var oMaster = this._oSplitApp.getMasterPages()[0];
                  this._oSplitApp.toMaster(oMaster, "flip");
 				} else {
 					this._oSplitApp.showMaster();
 				}
-				
+
 			}
 		},
 		onPressHome:function(oEvnet){
-		  this.getRouter().navTo("");	
+		  this.getRouter().navTo("");
 		},
 		//PT mode
 		onPressPT:function(oEvent){
-			this.getRouter().navTo("slides");	
+			this.getRouter().navTo("slides");
 		},
 		//Websocket switch
 		onPressSwitch:function(oEvent){
@@ -178,8 +178,8 @@ sap.ui.define([
 				this.oWS.open();
 			}
 		}
-		
-		
-		
+
+
+
     });
 });
