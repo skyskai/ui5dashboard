@@ -18,7 +18,7 @@ sap.ui.define([
 			var that = this;
 			//Websocket오픈
 			//var sUrl = "ws://127.0.0.1:8000";//local
-			var sUrl = "wss://ui5websocket.herokuapp.com/";
+			var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com/";
 			jQuery.sap.require("sap.ui.core.ws.WebSocket");
 
 		    this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
