@@ -762,336 +762,336 @@
  {
    "Year": 2018,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 32216.4,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 21100.6,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 18479.8,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 17742.3,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 14189.1,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 9438,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 9010.3,
    "Currency": "USD"
  },
  {
    "Year": 2018,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 7970.2,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 134900,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 121772.68,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 98700.38,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 89727.6,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 84588.7,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 76001.8,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 67393.4,
    "Currency": "USD"
  },
  {
    "Year": 1997,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 67010.4,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 178458.5,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 79114.74,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 77293,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 64699.52,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 45918.1,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 43458,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 41639.42,
    "Currency": "USD"
  },
  {
    "Year": 1998,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 32167.3,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 32216.4,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 21100.6,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 18479.8,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 17742.3,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 14189.1,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 9438,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 9010.3,
    "Currency": "USD"
  },
  {
    "Year": 2015,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 7970.2,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 134900,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 121772.68,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 98700.38,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 89727.6,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 84588.7,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 76001.8,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 67393.4,
    "Currency": "USD"
  },
  {
    "Year": 2016,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 67010.4,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Beverages",
-"CategoryEN": "유분/화성",
+"CategoryKO": "유분/화성",
    "Amount": 178458.5,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Confections",
-"CategoryEN": "복합수지",
+"CategoryKO": "복합수지",
    "Amount": 79114.74,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Dairy Products",
-"CategoryEN": "에너지",
+"CategoryKO": "에너지",
    "Amount": 77293,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Seafood",
-"CategoryEN": "폴리에틸렌",
+"CategoryKO": "폴리에틸렌",
    "Amount": 64699.52,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Produce",
-"CategoryEN": "기타 A",
+"CategoryKO": "기타 A",
    "Amount": 45918.1,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Grains/Cereals",
-"CategoryEN": "기타 C",
+"CategoryKO": "기타 C",
    "Amount": 43458,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Meat/Poultry",
-"CategoryEN": "폴리머",
+"CategoryKO": "폴리머",
    "Amount": 41639.42,
    "Currency": "USD"
  },
  {
    "Year": 2017,
    "Category": "Condiments",
-"CategoryEN": "기타 B",
+"CategoryKO": "기타 B",
    "Amount": 32167.3,
    "Currency": "USD"
  }
