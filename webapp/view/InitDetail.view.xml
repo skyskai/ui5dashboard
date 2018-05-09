@@ -9,7 +9,7 @@
 			<l:content>
 			<Title width="100%" text="{i18n>initPageTitle}" class="InitTitle" />
 			<Title width="100%" text="{i18n>initPageTitleSub}" class="InitTitle" />
-			<html:iframe frameBorder="0" scrolling="no" width="100%" height="600px" src="./model/VoiceEffect.html"/>
+			<!-- <html:iframe frameBorder="0" scrolling="no" width="100%" height="600px" src="./model/VoiceEffect.html"/> -->
 			<!-- <Image src="./css/VoiceEffect.gif" width="100%"/> -->
 		</l:content>
 		</l:VerticalLayout>

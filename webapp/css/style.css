@@ -1,11 +1,11 @@
 /* Enter your custom styles here */
-//이미지 센터
-.center {
+/*이미지 센터 */
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
+} */
 /*change font except icon */
 *:not(.sapUiIcon){
     font-family:'Malgun Gothic' !important;
@@ -51,7 +51,7 @@ border: solid 0.5px #bdc3c7;
 /*Background*/
 .sapMShellBG.sapUiGlobalBackgroundImage{
 	/*background-image:url(http://www.twitrcovers.com/wp-content/uploads/2012/09/Hero.jpg);*/
-	background-image:url(./marvel01.jpg);
+  	background-image:url('./background_dashboard.jpg');
     background-size: cover;
  /*   filter: blur(3px);*/
 }
@@ -68,9 +68,9 @@ border: solid 0.5px #bdc3c7;
 /*	background-color: #ffffff;*/
 /*        background-color: rgba( 255, 255, 255, 0.5 );*/
 /*}*/
-.sapMShellContent.sapMShellGlobalInnerBackground{
+/* .sapMShellContent.sapMShellGlobalInnerBackground{
 	opacity:0.8;
-}
+} */
 
 .sapContrast.sapContrastPlus.sapMIBar.sapMTB.sapMTB-Auto-CTX.sapMTBInactive.sapMTBNewFlex.sapTntToolHeader{
 

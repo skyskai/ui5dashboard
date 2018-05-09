@@ -1,7 +1,8 @@
 sap.ui.define([
 	"ysc/websocket/controller/BaseController",
-	'sap/m/MessageToast'
-], function(Controller,MessageToast) {
+	'sap/m/MessageToast',
+	'sap/ui/core/ws/WebSocket'
+], function(Controller,MessageToast,WebSocket) {
 	"use strict";
 
 	return Controller.extend("ysc.websocket.controller.App", {
@@ -19,9 +20,10 @@ sap.ui.define([
 			//Websocket오픈
 			//var sUrl = "ws://127.0.0.1:8000";//local
 			var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com/";
-			jQuery.sap.require("sap.ui.core.ws.WebSocket");
+			// jQuery.sap.require("sap.ui.core.ws.WebSocket");
 
-		    this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
+		    // this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
+				this.oWS = new WebSocket(sUrl);
 
 		    var that = this;
 		    this.oWS.attachOpen(function(){
