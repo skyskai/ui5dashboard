@@ -11,7 +11,7 @@
 							<viz:dataset>
 								<viz.data:FlattenedDataset data="{salesNorthwind>/SalesByProduct}">
 									<viz.data:dimensions>
-										<viz.data:DimensionDefinition name="Product" value="{salesNorthwind>Product}"/>
+										<viz.data:DimensionDefinition name="Product" value="{salesNorthwind>ProductKO}"/>
 									</viz.data:dimensions>
 									<viz.data:measures>
 										<viz.data:MeasureDefinition name="Amount" value="{salesNorthwind>Amount}"/>
@@ -42,7 +42,7 @@
 						<items>
 							<ColumnListItem>
 								<cells>
-									<ObjectIdentifier title="{salesNorthwind>Product}"/>
+									<ObjectIdentifier title="{salesNorthwind>ProductKO}"/>
 									<ObjectNumber emphasized="false"
 										number="{parts:['salesNorthwind>Amount','salesNorthwind>Currency'],type:'sap.ui.model.type.Currency',formatOptions:{showMeasure:false}}" unit="{salesNorthwind>Currency}"/>
 									<!--<Text text="{salesNorthwind>Currency}"/>-->

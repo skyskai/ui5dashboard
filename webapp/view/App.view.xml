@@ -2,7 +2,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App >
 		<pages>
-		  <Page showHeader="false">	
+		  <Page showHeader="false">
 				<tnt:ToolHeader>
 					<Button id="_idHamburger"  icon="sap-icon://menu2" type="Transparent" press=".onPressHamburger">
 						<layoutData>
@@ -17,6 +17,8 @@
 					<Button  icon="sap-icon://projector"  type="Transparent" press=".onPressPT"/>
 					<Title level="H3" text="{i18n>mainTitle}"/>
 					<ToolbarSpacer/>
+					<Input width="200px" placeholder="말을 하거나 입력하세요"/>
+					<ToggleButton id="idMicrophone" icon="sap-icon://microphone" press=".onPressMic"/>
 					<Switch change=".onPressSwitch" state="true" visible="false"/>
 					<Button  icon="sap-icon://ui-notifications"  type="Transparent" press=".onPressHome"/>
 				</tnt:ToolHeader>
