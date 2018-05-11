@@ -1,13 +1,15 @@
 sap.ui.define([
 	"ysc/websocket/controller/BaseController",
-	'sap/m/MessageToast'
-], function(Controller,MessageToast) {
+	'sap/m/MessageToast',
+	'sap/ui/core/ws/WebSocket'
+], function(Controller,MessageToast,WebSocket) {
 	"use strict";
 
 	return Controller.extend("ysc.websocket.controller.App", {
 
 		onInit:function(){
 			this._oSplitApp = this.byId("idAppControl");
+			this._oMicButton = this.byId("idMicrophone");
 
 		   //local model
 			var oLocalData = {"Chat":[{"Title":"Notification","Text":"아래는 Google Assistant를 통한 요청 내용이 표시됩니다","Datetime":new Date(),"Icon":"sap-icon://business-objects-mobile"}]
@@ -19,9 +21,14 @@ sap.ui.define([
 			//Websocket오픈
 			//var sUrl = "ws://127.0.0.1:8000";//local
 			var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com/";
+<<<<<<< HEAD
 			jQuery.sap.require("sap.ui.core.ws.WebSocket");
+=======
+			// jQuery.sap.require("sap.ui.core.ws.WebSocket");
+>>>>>>> c8534eaddbe6862b4327e8822ef4926ff5a06c9a
 
-		    this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
+		    // this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
+				this.oWS = new WebSocket(sUrl);
 
 		    var that = this;
 		    this.oWS.attachOpen(function(){
@@ -132,6 +139,80 @@ sap.ui.define([
 		    	that._addTextToChat(i18n.getText("disconnected"),"System","sap-icon://message-error");
 		    	MessageToast.show(i18n.getText("disconnected"));
 		       });
+			//Web RTC를 이용한 음성인식 처리
+						this._oRecognition = new webkitSpeechRecognition();
+						  var isRecognizing = false;
+						  var ignoreOnend = false;
+						  var finalTranscript = '';
+						 	// var audio = document.getElementById('audio');
+						  // var $btnMic = $('#btn-mic');
+						 	// var $result = $('#result');
+						 	// var $iconMusic = $('#icon-music');
+						  this._oRecognition.continuous = true;
+						  this._oRecognition.interimResults = true;
+              //음성인식 시작
+						  this._oRecognition.onstart = function() {
+						    // console.log('onstart', arguments);
+						    isRecognizing = true;
+						    that._oMicButton.setPressed(true);
+						  };
+							//음성인식 종료
+							this._oRecognition.onend = function() {
+					    isRecognizing = false;
+
+					    if (ignoreOnend) {
+					      return false;
+					    }
+					    // DO end process
+					    that._oMicButton.setPressed(false);
+							if (!finalTranscript) {
+				      console.log('empty finalTranscript');
+				      return false;
+				    }
+
+				    // if (window.getSelection) {
+				    //   window.getSelection().removeAllRanges();
+				    //   var range = document.createRange();
+				    //   range.selectNode(document.getElementById('final-span'));
+				    //   window.getSelection().addRange(range);
+				    // }
+
+				  };
+
+				  this._oRecognition.onresult = function(event) {
+				    console.log('onresult', event);
+
+				    var interimTranscript = '';
+				    if (typeof(event.results) == 'undefined') {
+				      this._oRecognition.onend = null;
+				      this._oRecognition.stop();
+				      return;
+				    }
+
+				    for (var i = event.resultIndex; i < event.results.length; ++i) {
+				      if (event.results[i].isFinal) {
+				        finalTranscript += event.results[i][0].transcript;
+				      } else {
+				        interimTranscript += event.results[i][0].transcript;
+				      }
+				    }
+
+				    // finalTranscript = capitalize(finalTranscript);
+
+
+				    console.log('finalTranscript', finalTranscript);
+				    console.log('interimTranscript', interimTranscript);
+						if(finalTranscript !== ''){
+						   fireCommand(finalTranscript);
+
+						}
+				  };
+
+					  function fireCommand(string) {
+							that._postTextToServer(string);
+							finalTranscript='';
+						}
+
 		},
 
 		_addTextToChat:function(newText,sUsername,sIcon){
@@ -177,6 +258,39 @@ sap.ui.define([
 			} else {
 				this.oWS.open();
 			}
+		},
+		//마이크 클릭시 음성 인식-카카오플러스 친구쭉으로 던져서 받자
+		onPressMic:function(oEvent){
+			var oSource = oEvent.getSource();
+			// if(oSource.getPressed()){
+			// 	this._oRecognition.stop();
+			// 	oSource.setPressed(false);
+			// } else  {
+				this._oRecognition.lang = 'ko-KR';
+				this._oRecognition.start();
+			// }
+
+		},
+		//텍스트 던져
+		_postTextToServer:function(sText){
+			let sUrl = "https://kakaoplusfriend.cfapps.us30.hana.ondemand.com/message";
+			$.ajax({
+				 method: 'post',
+			   url:sUrl,
+				 dataType:"jsonp",
+ 				 data:{
+					user_key:"kakao",
+					type:"text",
+					content:sText
+				},
+				success:function(data){
+					 alert(data.message.text);
+				},
+				error:function(xhr){
+					 alert("error");
+
+				}
+			})
 		}
 
 
