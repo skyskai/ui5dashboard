@@ -14,5 +14,5 @@ app.get('/admin',function(req,res){
 
 
 app.listen(port);
-
+console.log(__dirname);
 console.log("Running at Port "+port);
