@@ -198,7 +198,9 @@ sap.ui.define([
 
 				    console.log('finalTranscript', finalTranscript);
 				    console.log('interimTranscript', interimTranscript);
-				    fireCommand(interimTranscript);
+						if(finalTranscript !== ''){
+						   fireCommand(finalTranscript);
+						}				    
 				  };
 
 					  function fireCommand(string) {
