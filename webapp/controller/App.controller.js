@@ -200,11 +200,13 @@ sap.ui.define([
 				    console.log('interimTranscript', interimTranscript);
 						if(finalTranscript !== ''){
 						   fireCommand(finalTranscript);
-						}				    
+
+						}
 				  };
 
 					  function fireCommand(string) {
 							that._postTextToServer(string);
+							finalTranscript='';
 						}
 
 		},
@@ -255,16 +257,24 @@ sap.ui.define([
 		},
 		//마이크 클릭시 음성 인식-카카오플러스 친구쭉으로 던져서 받자
 		onPressMic:function(oEvent){
-        this._oRecognition.lang = 'ko-KR';
+			var oSource = oEvent.getSource();
+			// if(oSource.getPressed()){
+			// 	this._oRecognition.stop();
+			// 	oSource.setPressed(false);
+			// } else  {
+				this._oRecognition.lang = 'ko-KR';
 				this._oRecognition.start();
+			// }
+
 		},
 		//텍스트 던져
 		_postTextToServer:function(sText){
 			let sUrl = "https://kakaoplusfriend.cfapps.us30.hana.ondemand.com/message";
 			$.ajax({
 				 method: 'post',
-				url:sUrl,
-				data:{
+			   url:sUrl,
+				 dataType:"jsonp",
+ 				 data:{
 					user_key:"kakao",
 					type:"text",
 					content:sText
@@ -273,6 +283,7 @@ sap.ui.define([
 					 alert(data.message.text);
 				},
 				error:function(xhr){
+					 alert("error");
 
 				}
 			})
