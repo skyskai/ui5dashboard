@@ -1,14 +1,12 @@
 {
   "name": "express-tutorial",
   "version": "1.0.0",
-   "main": "server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": 
-  {
+  "dependencies": {
     "express": "latest",
-    "path": "latest"   
-	
+    "path": "latest"
   }
 }

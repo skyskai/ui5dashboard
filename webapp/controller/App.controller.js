@@ -20,15 +20,14 @@ sap.ui.define([
 			var that = this;
 			//Websocket오픈
 			//var sUrl = "ws://127.0.0.1:8000";//local
-			var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com/";
-<<<<<<< HEAD
-			jQuery.sap.require("sap.ui.core.ws.WebSocket");
-=======
-			// jQuery.sap.require("sap.ui.core.ws.WebSocket");
->>>>>>> c8534eaddbe6862b4327e8822ef4926ff5a06c9a
+			// var sUrl = "wss://ui5websocket.cfapps.eu10.hana.ondemand.com/";
+			var sUrl = "wss://websocketserverg51d19f20.jp1.hana.ondemand.com/WebSocketServer/endpoint";
 
-		    // this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
-				this.oWS = new WebSocket(sUrl);
+			jQuery.sap.require("sap.ui.core.ws.WebSocket");
+
+
+		    this.oWS = new sap.ui.core.ws.WebSocket(sUrl);
+				// this.oWS = new WebSocket(sUrl);
 
 		    var that = this;
 		    this.oWS.attachOpen(function(){
