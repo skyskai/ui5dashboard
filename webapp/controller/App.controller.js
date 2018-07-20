@@ -44,7 +44,8 @@ sap.ui.define([
 
 
 		        // var oEntry = jQuery.parseJSON(oControlEvent.getParameter('data')).data;
-		        var oReturnData = JSON.parse(JSON.parse(oControlEvent.getParameter('data')));
+						//nodejs로 바뀔 때 아래를 다시 parse해야할수도
+		        var oReturnData = JSON.parse(oControlEvent.getParameter('data'));
 		        //add Request Text to Upper notification item
 		        that._addTextToChat(oReturnData.forUIRequest,"You","sap-icon://customer");
 
